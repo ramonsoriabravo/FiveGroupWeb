@@ -1,0 +1,157 @@
+@import url(menu.css);
+@import url(footer.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+	/*scroll suavizado*/
+}
+
+hr {
+    border-color: black;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+body {
+    background-color: rgb(199, 253, 235);
+}
+
+main {
+    margin: auto;
+    max-width: 60rem;
+    /*margin auto y max-width hacen que el main quede centrado 
+    y con un maximo de 960 pixeles o 60rem*/
+}
+
+section[id] {
+	scroll-margin-top: 40px;
+	/*Margen superior de desplazamiento*/
+}
+
+/* ----------- INFORMACION DEL HOME  ------------ */
+
+.home-info-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color:gainsboro;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.home-info-text h2 {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 25px;
+}
+
+.home-info-text p{
+    padding-bottom: 1em;
+}
+
+.home-info-ima img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);   
+}
+
+/*------ SERVICIOS ---------*/
+
+#services-container {
+    padding: 1em;
+    padding-bottom: 3em;
+    background-color: grey;
+    border-radius: 10px;
+}
+
+#services-container h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#services-container summary {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 0.4rem;
+    cursor: pointer;
+}
+
+#services-container summary:hover {
+    background-color: rgb(78, 76, 76);
+}
+
+.detail-text{    
+    padding: 1rem;
+    background-color: rgb(158, 157, 157);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.detail-text button{
+    border: none;
+    background-color: rgb(36, 36, 247);
+    /*text-decoration: none;*/
+    font-size: 0.8rem;
+    padding: .3rem .9rem;
+    margin: 0.4rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.detail-text button a:visited{
+    color:white;
+    padding: .4rem 1rem;
+}
+
+.detail-text button a:link{
+    color:yellow;
+    padding: .4rem 1rem;
+}
+
+.detail-text button a:hover{
+    color:yellow;
+    font-size: 1rem;
+    padding: .4rem .9rem;
+}
+
+.detail-text button:hover{
+    background-color: red;
+    color: black;
+    /*padding: .6rem;*/
+    box-shadow: 0px 4px 10px rgba(255, 254, 254, 0.5); 
+}
+
+article img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/*//////////// PANTALLA MEDIANA /////////////////*/
+
+@media screen and (min-width: 700px) {
+
+    section[id] {
+        scroll-margin-top: 85px;
+        /*Margen superior de desplazamiento*/
+    }
+
+    .home-info-text h2 {
+        font-size: 30px;
+    } 
+}
+
+/*//////////// PANTALLA GRANDE LO HAGO DESDE ACA A 900PX /////////////////*/

@@ -1,0 +1,21 @@
+@import url(menu.css);
+@import url(footer.css);
+
+main{
+    text-align: center;
+    background-color: rgb(101, 138, 138);
+ }
+ 
+ img{
+     width: 80%;
+     min-width: 9rem;
+     max-width: 40rem;
+     border-radius: 1rem;
+     margin: 1rem;
+     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+ }
+
+ .duda{
+    width: 20%;
+    border-radius: 50%;
+ }

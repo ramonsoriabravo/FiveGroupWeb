@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: rgb(55, 55, 197);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+
+    height: 40px;
+    z-index: 1;    
+}
+
+header h1 {
+    font-weight: 900;
+    font-style: italic;
+    font-size: 1rem;
+    color: white;
+    padding-top: 0.6rem;
+}
+
+.home-title {
+    /* En pantalla chica no se ve este titulo de la empresa*/
+    display: none;
+}
+
+/* ------------- MENU DE NAVEGACION ------------ */
+
+.fa-solid {
+    /* fa-solid es una clase de fontawesome (icono de barritas para el menu desplegable)
+     con esto pongo el icono de barras en blanco a la derecha arriba*/
+    color: white;
+    font-size: 1.6em;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.nav-menu {
+    background-color: rgba(0, 0, 255, 0.5);
+    text-align: center;
+    border-radius: 10px;
+    /* A partir de acá posiciona el menu a la derecha y arriba, pero debajo del header y al 50%*/
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 50%;
+}
+
+.nav-menu a {
+    /*font-size: 2.5vw;*/
+    font-size: 12px;
+
+    color: aliceblue;
+    border-radius: 5px;
+    padding: 0.5em;
+    background-color: rgba(43, 43, 211, 0.5);
+    transition: 0.5;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.nav-menu a:hover {
+    font-size: 13px;
+    color: white;
+    background-color: rgba(22, 22, 117, 0.5);
+    box-shadow: 0px 5px 10px rgba(253, 253, 255, 0.5);
+}
+
+.nav-menu-items {
+    display: flex;
+    flex-direction: column;
+}
+
+/*//////////// PANTALLA MEDIANA /////////////////*/
+
+@media screen and (min-width: 700px){
+
+    header {
+        flex-wrap: wrap;
+        height: 85px;        
+    }
+
+    header h1 {
+        font-size: 22px;
+        padding-bottom: 0;
+    }
+
+    .home-title {
+        display: block;
+    }
+
+    .home-title h2 {
+        font-size: 2.4vw;
+        font-weight: 300;
+        color: rgb(185, 185, 185);
+        max-width: 960px;
+    }   
+
+    .nav-menu {
+        display: block;
+        background-color: transparent;
+
+        margin-top: 1em;
+        position: static;
+    }
+
+    .fa-solid {
+        display: none;
+    }
+
+    .nav-menu a {
+        font-size: 11px;
+        padding: 0.5em;
+        margin-right: 7px;
+    }
+
+    .nav-menu a:hover {
+        font-size: 12px;
+        color: white;
+        background-color: rgba(71, 71, 231, 0.5);
+        box-shadow: 0px 5px 10px rgba(253, 253, 255, 0.5);
+    }
+
+    .nav-menu-items {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/*////////////// PANTALLA GRANDE ////////////////*/
+
+@media screen and (min-width: 900px) {
+
+    header h1 {
+        font-size: 30px;
+
+    }
+
+    .home-title h2 {
+        font-size: 1.9vw;
+    }
+
+    .nav-menu a {
+        font-size: 13px;
+    }
+
+    .nav-menu a:hover {
+        font-size: 14px;       
+    }
+}

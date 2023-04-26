@@ -1,0 +1,315 @@
+@import url(menu.css);
+@import url(footer.css);
+
+
+main {
+    margin: auto;
+    max-width: 60rem;
+    background-color: rgb(216, 216, 216);
+    /*text-align: center;*/
+    /*margin auto y max-width hacen que el main quede centrado 
+    y con un maximo de 960 pixeles o 60rem*/
+    padding-bottom: 1rem;
+}
+
+body {
+    background-color: rgb(163, 161, 161);
+}
+
+span {
+    background-color: blue;
+    font-style: italic;
+    color: white;
+    padding: 0.2rem 0.6rem 0.1rem;
+    border-radius: 1rem;
+}
+
+#antro-container h1 {
+    font-size: 1.5rem;
+    padding: .5rem;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+#antro-container h2 {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#antro-container article {
+    border-radius: 15px;
+    /* display: block;*/
+    padding: 1rem;
+}
+
+img {
+    border-radius: 1rem;    
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* ///////////////// INFORMACION PRINCIPAL ///////////////////*/
+
+#antro-container .antro-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+    margin: 1rem 1.5rem 1.5rem;
+}
+
+#antro-container .antro-info p {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+#antro-container .antro-info img {
+    max-width: 55%;
+    height: auto;
+    border-radius: 10%;
+}
+
+/* ///////////////// INFORMACION DE PREGUNTAS ///////////////////*/
+
+
+#antro-faq-container {
+    background-color: rgb(153, 152, 152);
+}
+
+#antro-container .antro-faq .antro-text {
+    background-color: rgb(159, 193, 204);
+    border-radius: 1rem;
+    text-align: center;
+    padding: 2rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    margin: auto;
+    margin: 0 0.5rem;   
+}
+
+#antro-container .antro-faq .antro-images {    
+    background-color: rgb(117, 117, 117);    
+    margin: 0 .4rem 0;  
+    padding: 0.6rem;
+    border-radius: 5px;
+
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;    
+    flex-wrap: wrap;
+}
+
+#antro-container .antro-faq .antro-images img {
+    
+    /* width: 14rem; */
+    height: auto;
+    max-width: 100%;
+    align-self: center;  
+}
+
+#antro-container .antro-faq summary {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: rgb(136, 136, 136);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    padding: 0.8rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#antro-container .antro-faq summary:hover {
+    background-color: rgb(78, 76, 76);
+}
+
+#antro-container .antro-faq p {
+    /*width: 40%;*/
+    text-align: justify;
+    padding: 1rem;
+}
+
+#antro-container .antro-faq ul {
+    text-align: justify;
+    font-style: italic;
+    padding-left: 3rem;
+}
+
+
+/* ///////////////// VIDEO ///////////////////*/
+
+#antro-container .antro-video {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+
+    position: relative;
+    padding-bottom: 57.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+#antro-container .antro-video iframe {
+    padding: 2rem;
+    border-radius: 2.5rem;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+/* ///////////////// END ///////////////////*/
+
+#antro-container .antro-end {
+    background-color: rgb(196, 196, 197);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 1rem 1.5rem 3rem;
+}
+
+#antro-container .antro-end p {
+    padding: 1rem;
+}
+
+#antro-container .antro-end .invitation {
+
+    background-color: rgb(255, 255, 255);   
+    border-radius: 5px;
+    font-weight: 700;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    margin: 2rem; 
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#antro-container .antro-end .invitation img {
+    align-self: center;
+    width: 20rem;    
+    max-width: 30%;    
+    border-radius: 3rem;
+    margin: 1rem;
+}
+
+
+/* ////// BOTON ///////*/
+
+.antro-end button {
+    align-self: center;
+    width: 8rem;
+    border: none;
+    background-color: rgb(36, 36, 247);
+    /*text-decoration: none;*/
+    font-size: 0.9rem;
+    padding: .6rem .9rem;
+    margin: 0.4rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.753);
+}
+
+.antro-end button a:visited {
+    color: white;
+    padding: .4rem 1rem;
+}
+
+.antro-end button a:link {
+    color: yellow;
+    padding: .4rem 1rem;
+}
+
+.antro-end button a:hover {
+    color: yellow;
+    font-size: 1rem;
+    padding: .4rem .9rem;
+}
+
+.antro-end button:hover {
+    background-color: red;
+    color: black;
+    /*padding: .6rem;*/
+    box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.979);
+}
+
+/******************** PANTALLA MEDIANA *******************************/
+
+@media screen and (min-width: 700px) {
+
+    #antro-container h1 {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    #antro-container h2 {
+        font-size: 1.5rem;
+    }
+
+    /* ///////////////// INFORMACION PRINCIPAL ///////////////////*/
+
+    #antro-container .antro-info p {
+        width: 40%;
+    }
+
+    #antro-container .antro-info img {
+        max-width: 35%;
+    }
+
+    /* ///////////////// INFORMACION DE PREGUNTAS ///////////////////*/
+
+    #antro-container .antro-data{
+        display: flex;
+        
+
+        align-content:space-around;
+        
+        
+
+    }
+
+    #antro-container .antro-faq summary {
+        font-size: 1.2rem;
+    }
+
+  
+    #antro-container .antro-faq img {
+        /* Tengo que ver el responsivo */
+        width: 100%;
+    }
+
+    #antro-container .antro-faq .antro-text{
+        width: 40rem;
+        min-width: 60%;
+    }
+
+    #antro-container .antro-faq .antro-images img {
+    
+        /* width: 14rem; */
+        height: auto;
+        max-width: 100%;
+        align-self: center;   
+    
+    }
+
+
+
+    /* ///////////////// END ///////////////////*/
+
+    #antro-container .antro-end {
+        padding: 2rem;
+        margin: 1rem 1.5rem 3rem;
+    }
+
+    #antro-container .antro-end p {
+        padding: 1rem;
+    }
+
+
+
+
+}
+
+/******************** PANTALLA GRANDE **********************************/
