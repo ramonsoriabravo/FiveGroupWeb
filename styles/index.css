@@ -10,8 +10,10 @@
 }
 
 html {
-	scroll-behavior: smooth;
-	/*scroll suavizado*/
+    scroll-behavior: smooth;
+    /*scroll suavizado*/
+    min-height: 100%;
+    position: relative;
 }
 
 hr {
@@ -21,7 +23,7 @@ hr {
 }
 
 body {
-    background-color: rgb(199, 253, 235);
+    background-color: rgb(199, 253, 235);    
 }
 
 main {
@@ -32,8 +34,8 @@ main {
 }
 
 section[id] {
-	scroll-margin-top: 40px;
-	/*Margen superior de desplazamiento*/
+    scroll-margin-top: 40px;
+    /*Margen superior de desplazamiento*/
 }
 
 /* ----------- INFORMACION DEL HOME  ------------ */
@@ -46,7 +48,7 @@ section[id] {
     border-radius: 10px;
     margin-top: 5px;
     margin-bottom: 10px;
-    background-color:gainsboro;
+    background-color: gainsboro;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -56,14 +58,14 @@ section[id] {
     font-size: 25px;
 }
 
-.home-info-text p{
+.home-info-text p {
     padding-bottom: 1em;
 }
 
 .home-info-ima img {
     width: 100%;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);   
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 /*------ SERVICIOS ---------*/
@@ -93,14 +95,14 @@ section[id] {
     background-color: rgb(78, 76, 76);
 }
 
-.detail-text{    
+.detail-text {
     padding: 1rem;
     background-color: rgb(158, 157, 157);
     border-radius: 10px;
     text-align: center;
 }
 
-.detail-text button{
+.detail-text button {
     border: none;
     background-color: rgb(36, 36, 247);
     /*text-decoration: none;*/
@@ -108,30 +110,30 @@ section[id] {
     padding: .3rem .9rem;
     margin: 0.4rem;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-.detail-text button a:visited{
-    color:white;
+.detail-text button a:visited {
+    color: white;
     padding: .4rem 1rem;
 }
 
-.detail-text button a:link{
-    color:yellow;
+.detail-text button a:link {
+    color: yellow;
     padding: .4rem 1rem;
 }
 
-.detail-text button a:hover{
-    color:yellow;
+.detail-text button a:hover {
+    color: yellow;
     font-size: 1rem;
     padding: .4rem .9rem;
 }
 
-.detail-text button:hover{
+.detail-text button:hover {
     background-color: red;
     color: black;
     /*padding: .6rem;*/
-    box-shadow: 0px 4px 10px rgba(255, 254, 254, 0.5); 
+    box-shadow: 0px 4px 10px rgba(255, 254, 254, 0.5);
 }
 
 article img {
@@ -151,7 +153,7 @@ article img {
 
     .home-info-text h2 {
         font-size: 30px;
-    } 
+    }
 }
 
 /*//////////// PANTALLA GRANDE LO HAGO DESDE ACA A 900PX /////////////////*/
