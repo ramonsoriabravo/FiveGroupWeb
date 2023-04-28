@@ -33,6 +33,11 @@ header h1 {
     padding-top: 0.6rem;
 }
 
+.logo{    
+    overflow: hidden;
+    padding: 0 4rem 0 1.5rem;
+}
+
 .home-title {
     /* En pantalla chica no se ve este titulo de la empresa*/
     display: none;
@@ -100,6 +105,10 @@ header h1 {
         padding-bottom: 0;
     }
 
+    .logo{        
+        padding: 0 8rem 0 1.5rem;  
+    }
+
     .home-title {
         display: block;
     }
@@ -116,7 +125,6 @@ header h1 {
     .nav-menu {
         display: block;
         background-color: transparent;
-
         margin-top: 1em;
         position: static;
     }
