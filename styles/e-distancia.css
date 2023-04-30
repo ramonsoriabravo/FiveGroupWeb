@@ -5,11 +5,53 @@ main{
     text-align: center;
  }
  
- img{
+/* img{
      width: 80%;
      min-width: 9rem;
      max-width: 40rem;
      border-radius: 1rem;
      margin: 1rem;
      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
- }
+ } */
+
+/*  CONTACTO  */
+
+ #contenedor-contacto {
+    background-image: url(../img/mujer-tomando-agua.jpg);
+    background-position: center;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contacto {
+    font-size: 1.6rem;
+    background-color:  rgba(220, 224, 228, 1);
+    text-align: center;
+    padding: 2rem;
+    border-radius: 2rem;
+  }
+  
+  #contacto a {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: .75rem;
+    padding: .5rem 1.3rem;
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    border: none;
+    border-radius: 1rem;
+  }
+  
+  #contacto a:hover {
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
+  }
+  
+  .fa-regular {
+    transform: rotate(90deg);
+    translate: 0 .3em;
+    padding-right: .3rem;
+  }
