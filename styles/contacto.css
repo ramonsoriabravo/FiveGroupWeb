@@ -3,13 +3,60 @@
 
 main{
     text-align: center;
+    
  }
  
  img{
-     width: 80%;
+  width: 80%;
      min-width: 9rem;
      max-width: 40rem;
      border-radius: 1rem;
-     margin: 1rem;
-     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+     margin: 7rem;
+    
  }
+
+  form {
+    margin: 3rem;
+    width: 400px;
+    padding: 3rem;
+    }
+
+    #datos{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .mb-3
+    {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+  form label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  
+  input,
+  textarea {
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+  }
+  
+  
+  textarea {
+    vertical-align: top;
+    height: 5em;
+  }
+  
+  .button {
+    padding-left: 90px; 
+    size: 15rem;
+    margin-left: 5rem;
+  }
+ 
+ 

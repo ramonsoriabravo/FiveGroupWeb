@@ -19,7 +19,7 @@
     <!------- Animate.css  ----->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <link rel="stylesheet" href="./styles/contacto.css">
+    <link rel="stylesheet" href="../FiveGroupWeb/styles/contacto.css">
 
     <title>Five Group - Contacto</title>
 </head>
@@ -27,9 +27,11 @@
 <body>
     <!-- //////////////////////// COMIENZO DEL HEADER //////////////////////-->
     <header>
-        <a href="index.html">
-            <h1 class="animate__animated animate__bounceInRight">FIVE GROUP</h1>
-        </a>
+        <section class="logo">
+            <a href="index.html">
+                <h1 class="animate__animated animate__bounceInRight">FIVE GROUP</h1>
+            </a>
+        </section>
 
         <i class="fa-solid fa-bars"></i>
 
@@ -50,20 +52,48 @@
 
     <!-- //////////////////////// FIN DEL HEADER //////////////////////-->
 
-    <main>
-        <h1>Contacto</h1>
-        <h2>Maria Victoria Galano</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit repudiandae aliquam blanditiis debitis iste
-            ducimus, ea sunt incidunt consectetur ab cum libero vero, deserunt consequatur eum id doloremque, qui
-            dignissimos.</p>
-            <img src="./img/enconstruccion.png" alt="imagen en construccion">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit repudiandae aliquam blanditiis debitis iste
-            ducimus, ea sunt incidunt consectetur ab cum libero vero, deserunt consequatur eum id doloremque, qui
-            dignissimos.</p>
+    <main id="form">
+        <fieldset id="datos">
+            <legend id="contacto"> Contactanos</legend>
+
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label" >Dirección de correo</label>
+                <input type="email" class="form-control" id="exampleFormControlTextarea1" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Deporte</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <button><a href="#">Enviar</a></button>
+            </fieldset>
+
+
+      <h2>Suscribite a nuestro newsletter</h2>
+        <label for="Suscribirme"class="form-label" >
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      
+      <button><a href="#">Suscribite</a></button>
+
+      <h2>También podes contactarnos por whatsapp</h2>
+            <a href= "https://wa.me/+5491150494316" target="_blank">
+            </section>
+            
+            <i class="fa-brands fa-whatsapp fa-beat" style="color: #1fc309;">Whatsapp</i>
+          
+            <nav>
+    
+                <iframe mapa src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26284.414516573477!2d-58.50402653217315!3d-34.56490148949679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb67d776e79c9%3A0xe8722cf090719409!2sHospital%20Pirovano!5e0!3m2!1ses!2sar!4v1678731232771!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>>
+              </nav>
+             
+    
     </main>
 
     <!-- //////////////////////// COMIENZO DEL FOOTER //////////////////////-->
-    
+
     <footer>
         <nav id="social">
             <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -73,7 +103,7 @@
 
         <p>Desarrollado para <span>&lt; Codo a Codo 4.0/&gt;</span> FULL STACK PYTHON 2023</p>
         <p>Authors: <span class="span-author">&lt;Maria Victoria Galano/&gt;</span> - <span
-                class="span-author">&ltGabriel Emiliano Amarilla/&gt;</span>; -
+                class="span-author">&ltGabriel Emiliano Amarilla/&gt;</span> -
             <span class="span-author">&lt;Matías Iván Chirivella Alcántara/&gt;</span> - <span class="span-author">&lt;
                 Ramón Soria Bravo/&gt;</span>
         </p>
