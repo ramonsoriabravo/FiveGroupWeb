@@ -1,12 +1,19 @@
 @import url(menu.css);
 @import url(footer.css);
 
+:root {
+  --clr-dark: #173058;
+  --clr-dark-light: #244780;
+  --clr-main: #00B7D4;
+  --clr-light: #96DCF0 ;
+  --clr-white: #fff;
+}
+
 main{
     text-align: center;
  }
  
 /*  SECCION PRINCIPAL */
-
 
 .contenedor-principal {
   padding: 3rem;
@@ -36,12 +43,31 @@ main{
   justify-content: space-between;
 }
 
+.primera-fila,
+.tercera-fila {
+  background-color: var(--clr-main);
+  color: var(--clr-dark);
+}
+
+.primera-fila:hover,
+.tercera-fila:hover {
+  background-color: var(--clr-light);
+}
+
+.segunda-fila {
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+}
+
+.segunda-fila:hover {
+  background-color: var(--clr-dark-light);
+}
+
 .servicios {
   padding: 3rem;
   margin: 1rem;
   display: flex;
   flex-direction: column;
-  background-color: rgba(170, 182, 255, 0.75);
   overflow: hidden;
   border-radius: 50%;
   max-width: 30%;
@@ -50,16 +76,91 @@ main{
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5)
 }
 
-.servicios:hover {
-  background-color: rgba(186, 181, 255, 1);
-  
-}
-
 .servicios h3 {
   padding-bottom: 1rem;
   text-transform: uppercase;
 }
 
+/*// SECCION NOSOTROS //*/
+#nosotros {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 5rem 2rem;
+  background-color: var(--clr-white);
+  column-gap: 1rem ;
+}
+
+.nosotros {
+  justify-content: space-evenly;
+  max-width: 30%;
+  padding: 1.5rem;
+  border-radius: 2rem;
+}
+
+#primera {
+  font-weight: bold;
+  padding: 1.5rem 0;
+  text-align: start;
+}
+
+#primera p{
+  text-transform: uppercase;
+}
+
+#primera h3 {
+  padding: .8rem 0 1.5rem 0;
+  font-size: 1.5rem;
+}
+
+#primera a {
+  background-color: var(--clr-main);
+  border-radius: .75rem;
+  padding: .75rem 1rem;
+}
+
+#primera a:hover {
+  background-color: var(--clr-dark);
+  color: var(--clr-white);
+}
+
+#segunda {
+  background-color:var(--clr-dark);
+  color: var(--clr-light);
+  margin-bottom: 6rem;
+  text-align: center;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#segunda:hover {
+  background-color: var(--clr-dark-light);
+}
+
+#segunda h3{
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding: 1rem 0 1.5rem 0;
+  font-weight: bold;
+}
+
+#tercera {
+  margin-top: 6rem;
+  background-color:var(--clr-main);
+  color: var(--clr-dark);
+  text-align: center;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#tercera:hover {
+  background-color: var(--clr-light);
+}
+
+#tercera h3{
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding: 1rem 0 1.5rem 0;
+  font-weight: bold;
+}
 
  /*  CONTACTO  */
 
@@ -87,15 +188,15 @@ main{
     font-weight: bold;
     margin-top: .75rem;
     padding: .5rem 1.3rem;
-    background-color: rgb(55, 55, 197);
-    color: white;
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
     border: none;
     border-radius: 1rem;
   }
   
   #contenedor-contacto a:hover {
     background-color: white;
-    color: rgb(55, 55, 197);
+    color: var(--clr-dark);
   }
   
   .fa-regular {
@@ -105,6 +206,8 @@ main{
   }
 
   @media screen and (max-width: 780px) {
+
+/* SECCION PRINCIPAL */
 
   .contenedor-principal {
     padding: 1rem;
@@ -127,6 +230,32 @@ main{
 
   }
 
+  #primero-pf,
+  #primero-sf,
+  #primero-tf {
+    background-color: var(--clr-main);
+    color: var(--clr-dark);
+  }
+
+  #primero-pf:hover,
+  #primero-sf:hover,
+  #primero-tf:hover {
+    background-color: var(--clr-light);
+  }
+
+  #segundo-pf,
+  #segundo-sf,
+  #segundo-tf {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+  }
+
+  #segundo-pf:hover,
+  #segundo-sf:hover,
+  #segundo-tf:hover {
+    background-color: var(--clr-dark-light);
+  }
+
   .servicios {
     width: 100%;
 
@@ -138,5 +267,32 @@ main{
     margin: .7rem 0;
   }
 
+/* SECCION NOSOTROS */
+
+  #nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 1rem;
+    background-color: var(--clr-white);
+  }
+
+  .nosotros {
+    justify-content: center;
+    max-width: 100%;
+    padding: 1.5rem;
+    border-radius: 2rem;
+  }
+
+  #primera,
+  #segunda,
+  #tercera {
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+  #primera p {
+    font-size: 1.5rem;
+  }
 
   }
