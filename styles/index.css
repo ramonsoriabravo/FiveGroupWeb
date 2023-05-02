@@ -23,7 +23,7 @@ hr {
 }
 
 body {
-    background-color: #a5adb4;    
+    background-color: #a5adb4;
 }
 
 main {
@@ -43,7 +43,7 @@ section[id] {
 .home-info-container {
     display: flex;
     flex-wrap: wrap;
-    padding: 2rem;   
+    padding: 2rem;
     margin: 1rem 0;
     background-color: gainsboro;
 
@@ -56,13 +56,13 @@ section[id] {
     font-weight: 700;
     font-style: italic;
     font-size: 1.5rem;
-    margin-bottom: 1rem;    
+    margin-bottom: 1rem;
 }
 
 .home-info-text p {
-    text-align:justify;    
-    margin-bottom: 1rem;    
-} 
+    text-align: justify;
+    margin-bottom: 1rem;
+}
 
 .home-info-ima img {
     width: 100%;
@@ -88,9 +88,9 @@ section[id] {
 #services-container summary {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 20px;
-    font-weight: 400;    
+    font-weight: 400;
     padding: 0.4rem;
-    cursor: pointer;       
+    cursor: pointer;
 }
 
 #services-container summary:hover {
@@ -103,7 +103,7 @@ section[id] {
     background-color: rgb(158, 157, 157);
     border-radius: 10px;
     border-radius: 0;
-   
+
     text-align: center;
 }
 
@@ -161,28 +161,35 @@ article img {
         font-size: 30px;
     }
 
-    .article-container{
+    .article-container {
         display: flex;
-        background-color: rgb(107, 107, 109);
+        /* background-color: rgb(107, 107, 109); */
         border-radius: 25px;
         align-items: center;
         padding-right: 10px;
         padding-left: 10px;
         margin-bottom: 20px;
+
+        /* probando imagen fondo*/
+        background-image: url(../img/bg-sport-math.jpg);
+        background-size:cover;
+        /* background-repeat: no-repeat; */
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
     }
 
     .detail-text {
         padding: 2rem;
         background-color: rgb(158, 157, 157);
         border-radius: 30px 0 0 30px;
-        max-width: 50%;       
+        max-width: 50%;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
     }
 
     article img {
         padding-top: 5%;
         padding-right: 5%;
-        padding-bottom: 5%;        
-        border-radius: 0 15% 15% 0;       
+        padding-bottom: 5%;
+        border-radius: 0 15% 15% 0;
     }
 }
 

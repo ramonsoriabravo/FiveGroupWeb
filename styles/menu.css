@@ -49,7 +49,7 @@ header h1 {
     /* fa-solid es una clase de fontawesome (icono de barritas para el menu desplegable)
      con esto pongo el icono de barras en blanco a la derecha arriba*/
     color: white;
-    font-size: 1.6em;
+    font-size: 1.6rem;
     position: absolute;
     top: 5px;
     right: 5px;
@@ -73,7 +73,7 @@ header h1 {
 
     color: aliceblue;
     border-radius: 5px;
-    padding: 0.5em;
+    padding: 0.5rem;
     background-color: rgba(43, 43, 211, 0.5);
     transition: 0.5;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
@@ -125,7 +125,9 @@ header h1 {
     .nav-menu {
         display: block;
         background-color: transparent;
-        margin-top: 1em;
+        width: 55%;
+        
+        margin-top: 1rem;
         position: static;
     }
 
@@ -134,13 +136,13 @@ header h1 {
     }
 
     .nav-menu a {
-        font-size: 11px;
-        padding: 0.5em;
+        font-size: 12px;
+        padding: 0.4rem;
         margin-right: 7px;
     }
 
     .nav-menu a:hover {
-        font-size: 12px;
+        font-size: 13px;
         color: white;
         background-color: rgba(71, 71, 231, 0.5);
         box-shadow: 0px 5px 10px rgba(253, 253, 255, 0.5);
@@ -166,10 +168,10 @@ header h1 {
     }
 
     .nav-menu a {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .nav-menu a:hover {
-        font-size: 14px;       
+        font-size: 15px;       
     }
 }
