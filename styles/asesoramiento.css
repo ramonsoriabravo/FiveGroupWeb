@@ -111,10 +111,11 @@ img{
 
 #contacto {
     background-image: url(../img/suelos-madera-marron.jpg);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
     background-position: center;
     background-size: cover;
     margin: 1.5rem 1rem;
-    margin-left: 0;
+    margin-left: 0; 
     padding: 3rem;
     border-radius: 0rem 3rem 3rem 0;
     height: 15rem;
@@ -202,8 +203,26 @@ img{
         text-shadow: 4px 4px 10px rgba(255, 255, 255, 0.5);
     }
 
+    .contacto form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contacto a {
+        padding: .5rem .5rem .5rem .5rem ;
+        font-size: .8rem;
+        margin: 0;
+        border-radius: 1rem 1rem 1rem 1rem;
+    }  
+
     .contacto input {
-        max-width: 30%;
+        margin-bottom: 1rem;
+        padding: .3rem;
+        border-radius: 1rem;
+        width: 18rem;
+        max-width: max-content;
     }
 
     .contacto h2 {
