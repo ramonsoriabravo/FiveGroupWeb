@@ -65,6 +65,8 @@ img{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 0;
+    padding: .3rem;
 }
 
 .cajas {
@@ -172,19 +174,39 @@ img{
 /* MEDIA QUERY */
 
 @media screen and (max-width: 700px){
+
+    #principal h1 {
+        font-size: 1.4rem;
+    }
+
+    #principal h3 {
+        font-size: 1rem;
+    }
+
     #servicios {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding: 1rem;
     }
     
     .cajas {
-        margin: .8rem;
+        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
         padding: 1rem;
         width: 100%;
         min-height: 10rem;
         text-transform: uppercase;
         font-weight: bold;
         text-shadow: 4px 4px 10px rgba(255, 255, 255, 0.5);
+    }
+
+    .contacto input {
+        max-width: 30%;
+    }
+
+    .contacto h2 {
+        font-size: 1.5rem;
     }
 }
