@@ -7,6 +7,8 @@ main{
     text-align: center;
     margin: auto;
     max-width: 60rem;
+    background-color: #a5adb4;
+    font-style: bold;
     
  }
 
@@ -20,6 +22,7 @@ main{
     #datos{
         display: flex;
         flex-wrap: wrap;
+        font-style: bold;
     }
 
    
@@ -37,16 +40,17 @@ main{
     vertical-align: middle;
     width: 90px;
     text-align: center;
+    
   }
   
 
   #exampleFormControlTextarea1{
-    width: 200px;
-    height: 50px;
+   
     box-sizing: border-box;
     border: 1px solid #999;
     vertical-align: top;
     height: 1.5rem;
+    font-style: bold;
     
   }
 

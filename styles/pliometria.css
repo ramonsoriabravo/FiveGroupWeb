@@ -1,6 +1,15 @@
 @import url(menu.css);
 @import url(footer.css);
 
+:root {
+    --clr-dark: #173058;
+    --clr-dark-light: #244780;
+    --clr-main: #00B7D4;
+    --clr-light: #96DCF0 ;
+    --clr-white: #fff;
+  }
+  
+
 main
 { text-align: center;
     color:black;
@@ -8,19 +17,113 @@ main
     margin: auto;
     max-width: 60rem;
 }
+.contenedor-principal {
+    padding: 3rem;
+    background-image: url(../img/pliometria.jpg);
+    border-bottom: 5px solid black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
   
-    ol{font-size: 11;}
-    p{font-weight: none;}
-
+  .contenedor-principal h2{
+    text-transform: uppercase;
+    padding: 2rem;
+  }
+  
+  #primera-fila,
+  #tercera-fila {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     
-    h1 {color:black;}
-    h2,h3 {color:black}
-    h1{font-size: 18}
-    h2,h3{font-size: 13}
-    ol{font-size: 11;}
-    p{font-weight: none;}
+  }
+  
+  #segunda-fila {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .primera-fila,
+  .tercera-fila {
+    background-color: var(--clr-main);
+    color: var(--clr-dark);
+  }
+  
+  .primera-fila:hover,
+  .tercera-fila:hover {
+    background-color: var(--clr-light);
+  }
+  
+  .segunda-fila {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+  }
+  
+  .segunda-fila:hover {
+    background-color: var(--clr-dark-light);
+  }
+  .servicios {
+    padding: 3rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 50%;
+    max-width: 30%;
+    min-height: max-content;
+    min-width: 18rem;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5)
+  }
+  #services-container summary:hover {
+    color: white;
+    background-color: rgb(78, 76, 76);
+}
 
- 
+.detail-text {
+    padding: 2rem;
+    background-color: rgb(158, 157, 157);
+    border-radius: 10px;
+    border-radius: 0;
+
+    text-align: center;
+}
+
+.detail-text button {
+    border: none;
+    background-color: rgb(36, 36, 247);
+    /*text-decoration: none;*/
+    font-size: 0.8rem;
+    padding: .3rem .9rem;
+    margin: 0.4rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.detail-text button a:visited {
+    color: white;
+    padding: .4rem 1rem;
+}
+
+.detail-text button a:link {
+    color: yellow;
+    padding: .4rem 1rem;
+}
+
+.detail-text button a:hover {
+    color: yellow;
+    font-size: 1rem;
+    padding: .4rem .9rem;
+}
+
+.detail-text button:hover {
+    background-color: red;
+    color: black;
+    /*padding: .6rem;*/
+    box-shadow: 0px 4px 10px rgba(255, 254, 254, 0.5);
+}
+     
 
  img{
      width: 60%;
