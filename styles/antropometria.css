@@ -43,7 +43,7 @@ span {
 }
 
 img {
-    border-radius: 1rem;    
+    border-radius: 1rem;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -83,27 +83,27 @@ img {
     padding: 2rem;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
     margin: auto;
-    margin: 0 0.5rem;   
+    margin: 0 0.5rem;
 }
 
-#antro-container .antro-faq .antro-images {    
-    background-color: rgb(117, 117, 117);    
-    margin: 0 .4rem 0;  
+#antro-container .antro-faq .antro-images {
+    background-color: rgb(117, 117, 117);
+    margin: 0 .4rem 0;
     padding: 0.6rem;
     border-radius: 5px;
 
     display: flex;
     /* flex-direction: column; */
-    justify-content: space-around;    
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 #antro-container .antro-faq .antro-images img {
-    
+
     /* width: 14rem; */
     height: auto;
     max-width: 100%;
-    align-self: center;  
+    align-self: center;
 }
 
 #antro-container .antro-faq summary {
@@ -118,6 +118,7 @@ img {
 }
 
 #antro-container .antro-faq summary:hover {
+    color: white;
     background-color: rgb(78, 76, 76);
 }
 
@@ -161,78 +162,87 @@ img {
 
 /* ///////////////// END ///////////////////*/
 
-#antro-container .antro-end {
+#antro-end {
     background-color: rgb(196, 196, 197);
     border-radius: 1rem;
     padding: 2rem;
-    margin: 1rem 1.5rem 3rem;
+    margin: 1rem 1.5rem 3rem;    
 }
 
-#antro-container .antro-end p {
+#antro-end p {
     padding: 1rem;
 }
 
-#antro-container .antro-end .invitation {
-
-    background-color: rgb(255, 255, 255);   
-    border-radius: 5px;
-    font-weight: 700;
+#invit-container {
+    margin: auto;
+    margin-top: 3rem; 
+    margin-bottom: 3rem;   
+    text-align: center;
+    padding: 1rem;
+    max-width: 400px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    font-weight: 600;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    padding: 1rem;
-    margin: 2rem; 
-    
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
-#antro-container .antro-end .invitation img {
-    align-self: center;
-    width: 20rem;    
-    max-width: 30%;    
-    border-radius: 3rem;
-    margin: 1rem;
+/*//// DEFINO EL CONTENEDOR GRID ////////*/
+#invit-container {
+    display: grid;
+    gap: 1rem;
+    grid-template:  "texto  texto"  auto 
+                    "imagen imagen" 1fr 
+                    "boton  boton"  auto 
+                    / 1fr    1fr;    
+
+    justify-items: center;
 }
 
+/*////// DEFINO LAS AREAS DEL GRID ///////*/
+#invit-container .invit-text {
+    grid-area: texto;
+}
+
+#invit-container .invit-image {
+    grid-area: imagen;
+}
+
+#invit-container .invit-button {
+    grid-area: boton;
+    /* text-align: center;        */
+}
+
+#invit-container .invit-image {
+    margin: auto;
+    width: 100%;
+}
 
 /* ////// BOTON ///////*/
 
-.antro-end button {
-    align-self: center;
-    width: 8rem;
-    border: none;
+#invit-container .invit-button {
+    width: 150px;
     background-color: rgb(36, 36, 247);
-    /*text-decoration: none;*/
+    color: white;
     font-size: 0.9rem;
+    text-align: center;
     padding: .6rem .9rem;
     margin: 0.4rem;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.753);
 }
 
-.antro-end button a:visited {
+#invit-container .invit-button:visited {
     color: white;
-    padding: .4rem 1rem;
 }
 
-.antro-end button a:link {
+#invit-container .invit-button:link {
     color: yellow;
-    padding: .4rem 1rem;
 }
 
-.antro-end button a:hover {
+#invit-container .invit-button:hover {
     color: yellow;
-    font-size: 1rem;
-    padding: .4rem .9rem;
-}
-
-.antro-end button:hover {
     background-color: red;
-    color: black;
-    /*padding: .6rem;*/
-    box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.979);
+    font-size: 1rem;
 }
 
 /******************** PANTALLA MEDIANA *******************************/
@@ -260,56 +270,44 @@ img {
 
     /* ///////////////// INFORMACION DE PREGUNTAS ///////////////////*/
 
-    #antro-container .antro-data{
+    #antro-container .antro-data {
         display: flex;
-        
-
-        align-content:space-around;
-        
-        
-
+        align-content: space-around;
     }
 
     #antro-container .antro-faq summary {
         font-size: 1.2rem;
     }
 
-  
-    #antro-container .antro-faq img {
-        /* Tengo que ver el responsivo */
-        width: 100%;
-    }
-
-    #antro-container .antro-faq .antro-text{
+    #antro-container .antro-faq .antro-text {
         width: 40rem;
         min-width: 60%;
     }
 
-    #antro-container .antro-faq .antro-images img {
-    
-        /* width: 14rem; */
-        height: auto;
-        max-width: 100%;
-        align-self: center;   
-    
+    #antro-container .antro-faq .antro-images{
+        background-image: url(../img/bg-sport-blue.webp);
+        background-size:cover;
     }
-
-
 
     /* ///////////////// END ///////////////////*/
 
-    #antro-container .antro-end {
-        padding: 2rem;
-        margin: 1rem 1.5rem 3rem;
+    #antro-end > p{        
+        padding: 2rem 2rem 0rem;
     }
 
-    #antro-container .antro-end p {
-        padding: 1rem;
+    /*//// CAMBIO EN MAXIMO TAMAÑO DEL GRID */ 
+    #invit-container {
+        max-width: 700px;
+        padding: 1.5rem;
     }
-
-
-
-
+    
+    /*//// DEFINO EL CONTENEDOR GRID ////////*/
+    #invit-container {
+        grid-template:  "imagen texto"  auto 
+                        "imagen texto" 1fr 
+                        "imagen boton"  auto 
+                        / 70%    1fr;
+    }
 }
 
 /******************** PANTALLA GRANDE **********************************/
