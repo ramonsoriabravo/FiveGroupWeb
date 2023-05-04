@@ -1,24 +1,315 @@
 @import url(menu.css);
 @import url(footer.css);
 
-main{
-    text-align: center;
-    background-color: rgb(156, 154, 154);
- }
+main {
+    margin: auto;
+    max-width: 60rem;
+    background-color: rgb(216, 216, 216);
+    /*text-align: center;*/
+    /*margin auto y max-width hacen que el main quede centrado 
+    y con un maximo de 960 pixeles o 60rem*/
+    padding-bottom: 1rem;
+}
 
- h3{    
-    font-family: 'Roboto', sans-serif;
-    color: rgb(134, 2, 2);
+body {
+    background-color: rgb(163, 161, 161);
+}
+
+span {
+    background-color: blue;
+    font-style: italic;
+    color: white;
+    padding: 0.2rem 0.6rem 0.1rem;
+    border-radius: 1rem;
+}
+
+#bio-container h1 {
     font-size: 1.5rem;
-    font-weight: 900;
-    font-style: italic;    
- }
- 
- img{
-     width: 80%;
-     min-width: 9rem;
-     max-width: 40rem;
-     border-radius: 1rem;
-     margin: 1rem;
-     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
- }
+    padding: .5rem;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+#bio-container h2 {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#bio-container article {
+    border-radius: 15px;
+    /* display: block;*/
+    padding: 1rem;
+}
+
+img {
+    border-radius: 1rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* ///////////////// INFORMACION PRINCIPAL ///////////////////*/
+
+#bio-container .bio-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+    margin: 1rem 1.5rem 1.5rem;
+}
+
+#bio-container .bio-info p {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+#bio-container .bio-info img {
+    max-width: 55%;
+    height: auto;
+    border-radius: 10%;
+}
+
+/* ///////////////// INFORMACION DE PREGUNTAS ///////////////////*/
+
+
+#bio-faq-container {
+    background-color: rgb(153, 152, 152);
+}
+
+#bio-container .bio-faq .bio-text {
+    background-color: rgb(159, 193, 204);
+    border-radius: 1rem;
+    text-align: center;
+    padding: 2rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    margin: auto;
+    margin: 0 0.5rem;
+}
+
+#bio-container .bio-faq .bio-images {
+    /* background-color: rgb(117, 117, 117); */
+    background-image: url(../img/bg-sport-math.jpg);
+    background-size:cover;
+
+    margin: 0 .4rem 0;
+    padding: 0.6rem;
+    border-radius: 5px;
+
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#bio-container .bio-faq .bio-images img {
+
+    /* width: 14rem; */
+    height: auto;
+    max-width: 100%;
+    align-self: center;
+}
+
+#bio-container .bio-faq summary {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: rgb(136, 136, 136);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    padding: 0.8rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#bio-container .bio-faq summary:hover {
+    color: white;
+    background-color: rgb(78, 76, 76);
+}
+
+#bio-container .bio-faq p {
+    /*width: 40%;*/
+    text-align: justify;
+    padding: 1rem;
+}
+
+#bio-container .bio-faq ul {
+    text-align: justify;
+    font-style: italic;
+    padding-left: 3rem;
+}
+
+
+/* ///////////////// VIDEO ///////////////////*/
+
+#bio-container .bio-video {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+
+    position: relative;
+    padding-bottom: 57.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+#bio-container .bio-video iframe {
+    padding: 2rem;
+    border-radius: 2.5rem;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+/* ///////////////// END ///////////////////*/
+
+#bio-end {
+    background-color: rgb(196, 196, 197);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 1rem 1.5rem 3rem;    
+}
+
+#bio-end p {
+    padding: 1rem;
+}
+
+#invit-container {
+    margin: auto;
+    margin-top: 3rem; 
+    margin-bottom: 3rem;   
+    text-align: center;
+    padding: 1rem;
+    max-width: 400px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    font-weight: 600;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/*//// DEFINO EL CONTENEDOR GRID ////////*/
+#invit-container {
+    display: grid;
+    gap: 1rem;
+    grid-template:  "texto  texto"  auto 
+                    "imagen imagen" 1fr 
+                    "boton  boton"  auto 
+                    / 1fr    1fr;    
+
+    justify-items: center;
+}
+
+/*////// DEFINO LAS AREAS DEL GRID ///////*/
+#invit-container .invit-text {
+    grid-area: texto;
+}
+
+#invit-container .invit-image {
+    grid-area: imagen;
+}
+
+#invit-container .invit-button {
+    grid-area: boton;
+    /* text-align: center;        */
+}
+
+#invit-container .invit-image {
+    margin: auto;
+    width: 100%;
+}
+
+/* ////// BOTON ///////*/
+
+#invit-container .invit-button {
+    width: 150px;
+    background-color: rgb(36, 36, 247);
+    color: white;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: .6rem .9rem;
+    margin: 0.4rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.753);
+}
+
+#invit-container .invit-button:visited {
+    color: white;
+}
+
+#invit-container .invit-button:link {
+    color: yellow;
+}
+
+#invit-container .invit-button:hover {
+    color: yellow;
+    background-color: red;
+    font-size: 1rem;
+}
+
+/******************** PANTALLA MEDIANA *******************************/
+
+@media screen and (min-width: 700px) {
+
+    #bio-container h1 {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    #bio-container h2 {
+        font-size: 1.5rem;
+    }
+
+    /* ///////////////// INFORMACION PRINCIPAL ///////////////////*/
+
+    #bio-container .bio-info p {
+        width: 40%;
+    }
+
+    #bio-container .bio-info img {
+        max-width: 35%;
+    }
+
+    /* ///////////////// INFORMACION DE PREGUNTAS ///////////////////*/
+
+    #bio-container .bio-data {
+        display: flex;
+        align-content: space-around;
+    }
+
+    #bio-container .bio-faq summary {
+        font-size: 1.2rem;
+    }
+
+    #bio-container .bio-faq .bio-text {
+        width: 40rem;
+        min-width: 60%;
+    }
+
+    #bio-container .bio-faq .bio-images{
+        background-image: url(../img/bg-sport-blue.webp);
+        background-size:cover;
+    }
+
+    /* ///////////////// END ///////////////////*/
+
+    #bio-end > p{        
+        padding: 2rem 2rem 0rem;
+    }
+
+    /*//// CAMBIO EN MAXIMO TAMAÑO DEL GRID */ 
+    #invit-container {
+        max-width: 700px;
+        padding: 1.5rem;
+    }
+    
+    /*//// DEFINO EL CONTENEDOR GRID ////////*/
+    #invit-container {
+        grid-template:  "imagen texto"  auto 
+                        "imagen texto" 1fr 
+                        "imagen boton"  auto 
+                        / 70%    1fr;
+    }
+}
+
+/******************** PANTALLA GRANDE **********************************/
