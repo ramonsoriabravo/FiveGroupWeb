@@ -34,11 +34,12 @@ span {
 #antro-container h2 {
     font-size: 1.2rem;
     text-align: center;
+    max-width: 90%;
+    margin: auto;
 }
 
 #antro-container article {
     border-radius: 15px;
-    /* display: block;*/
     padding: 1rem;
 }
 
@@ -77,13 +78,12 @@ img {
 }
 
 #antro-container .antro-faq .antro-text {
-    background-color: rgb(159, 193, 204);
-    border-radius: 1rem;
+    background-color: rgb(159, 193, 204);   
     text-align: center;
     padding: 2rem;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    margin: auto;
     margin: 0 0.5rem;
+    
 }
 
 #antro-container .antro-faq .antro-images {
@@ -95,7 +95,8 @@ img {
     display: flex;
     /* flex-direction: column; */
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.753);
 }
 
 #antro-container .antro-faq .antro-images img {
@@ -104,6 +105,7 @@ img {
     height: auto;
     max-width: 100%;
     align-self: center;
+   
 }
 
 #antro-container .antro-faq summary {
@@ -134,12 +136,16 @@ img {
     padding-left: 3rem;
 }
 
+#antro-container .antro-faq li {
+    padding-right: 1rem;
+}
+
 
 /* ///////////////// VIDEO ///////////////////*/
 
 #antro-container .antro-video {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     padding-bottom: 2rem;
 
     position: relative;
@@ -166,7 +172,7 @@ img {
     background-color: rgb(196, 196, 197);
     border-radius: 1rem;
     padding: 2rem;
-    margin: 1rem 1.5rem 3rem;    
+    margin: 1rem 1.5rem 3rem;
 }
 
 #antro-end p {
@@ -175,8 +181,8 @@ img {
 
 #invit-container {
     margin: auto;
-    margin-top: 3rem; 
-    margin-bottom: 3rem;   
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     text-align: center;
     padding: 1rem;
     max-width: 400px;
@@ -190,10 +196,7 @@ img {
 #invit-container {
     display: grid;
     gap: 1rem;
-    grid-template:  "texto  texto"  auto 
-                    "imagen imagen" 1fr 
-                    "boton  boton"  auto 
-                    / 1fr    1fr;    
+    grid-template: "texto  texto" auto "imagen imagen" 1fr "boton  boton" auto / 1fr 1fr;
 
     justify-items: center;
 }
@@ -282,31 +285,29 @@ img {
     #antro-container .antro-faq .antro-text {
         width: 40rem;
         min-width: 60%;
+        border-radius: 0 0 1rem 1rem;
     }
 
-    #antro-container .antro-faq .antro-images{
+    #antro-container .antro-faq .antro-images {
         background-image: url(../img/bg-sport-blue.webp);
-        background-size:cover;
+        background-size: cover;
     }
 
     /* ///////////////// END ///////////////////*/
 
-    #antro-end > p{        
+    #antro-end>p {
         padding: 2rem 2rem 0rem;
     }
 
-    /*//// CAMBIO EN MAXIMO TAMAÑO DEL GRID */ 
+    /*//// CAMBIO EN MAXIMO TAMAÑO DEL GRID */
     #invit-container {
         max-width: 700px;
         padding: 1.5rem;
     }
-    
+
     /*//// DEFINO EL CONTENEDOR GRID ////////*/
     #invit-container {
-        grid-template:  "imagen texto"  auto 
-                        "imagen texto" 1fr 
-                        "imagen boton"  auto 
-                        / 70%    1fr;
+        grid-template: "imagen texto" auto "imagen texto" 1fr "imagen boton" auto / 70% 1fr;
     }
 }
 

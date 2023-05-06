@@ -5,9 +5,6 @@ main {
     margin: auto;
     max-width: 60rem;
     background-color: rgb(216, 216, 216);
-    /*text-align: center;*/
-    /*margin auto y max-width hacen que el main quede centrado 
-    y con un maximo de 960 pixeles o 60rem*/
     padding-bottom: 1rem;
 }
 
@@ -33,11 +30,12 @@ span {
 #bio-container h2 {
     font-size: 1.2rem;
     text-align: center;
+    max-width: 90%;
+    margin: auto;
 }
 
 #bio-container article {
     border-radius: 15px;
-    /* display: block;*/
     padding: 1rem;
 }
 
@@ -63,7 +61,7 @@ img {
 }
 
 #bio-container .bio-info img {
-    max-width: 55%;
+    max-width: 70%;
     height: auto;
     border-radius: 10%;
 }
@@ -77,7 +75,7 @@ img {
 
 #bio-container .bio-faq .bio-text {
     background-color: rgb(159, 193, 204);
-    border-radius: 1rem;
+
     text-align: center;
     padding: 2rem;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
@@ -86,7 +84,6 @@ img {
 }
 
 #bio-container .bio-faq .bio-images {
-    /* background-color: rgb(117, 117, 117); */
     background-image: url(../img/bg-sport-math.jpg);
     background-size:cover;
 
@@ -95,14 +92,12 @@ img {
     border-radius: 5px;
 
     display: flex;
-    /* flex-direction: column; */
     justify-content: space-around;
     flex-wrap: wrap;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 #bio-container .bio-faq .bio-images img {
-
-    /* width: 14rem; */
     height: auto;
     max-width: 100%;
     align-self: center;
@@ -125,7 +120,6 @@ img {
 }
 
 #bio-container .bio-faq p {
-    /*width: 40%;*/
     text-align: justify;
     padding: 1rem;
 }
@@ -141,7 +135,7 @@ img {
 
 #bio-container .bio-video {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     padding-bottom: 2rem;
 
     position: relative;
@@ -267,7 +261,7 @@ img {
     }
 
     #bio-container .bio-info img {
-        max-width: 35%;
+        max-width: 50%;
     }
 
     /* ///////////////// INFORMACION DE PREGUNTAS ///////////////////*/
@@ -284,6 +278,7 @@ img {
     #bio-container .bio-faq .bio-text {
         width: 40rem;
         min-width: 60%;
+        border-radius: 0 0 1rem 1rem;
     }
 
     #bio-container .bio-faq .bio-images{
