@@ -68,10 +68,11 @@ main h1 {
       text-align: left;
       
       }
-      .consulta button {
+      .button a{
         border: none;
         background-color: rgb(36, 36, 247);
         font-size: 0.8rem;
+        
       }
      
       .servicios{
@@ -114,11 +115,15 @@ main h1 {
     width: 15rem;
   }
   
-  
-
   #newsletter{
     color: white;
     margin: 5rem;
+    margin: 5 rem;
+    text-align: center;
+    padding: .5rem;
+    width: auto;
+    height: auto;
+    align-items: center;
   }
 
   #whatsapp{
@@ -128,11 +133,13 @@ main h1 {
       width: auto;
       height: auto;
       align-items: center;
+    
   }
+  
   #mapa{
     margin: 3rem;
     padding: .5rem;
-    width: auto300;
+    width: auto;
     height: auto;
     align-items: center;
    
