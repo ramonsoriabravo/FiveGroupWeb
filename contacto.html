@@ -53,22 +53,45 @@
     <!-- //////////////////////// FIN DEL HEADER //////////////////////-->
 
     <main>
-        <fieldset id="datos">
-            <legend id="contacto"> Contactanos</legend>
+        <section id="formulario-text">
+            <h1>
+             En FIVE GROUP estamos para ayudarte. Completá el formulario para contactarte con nosotros.
+            </h1>
+        </section> 
+        <form id="formulario-contenedor">
+            <fieldset id="datos"> 
+            <legend id="contacto"> 
+               
+                
+            </legend>
 
-            <div class="mb-3">
+            <div class="email">
                 <label for="exampleFormControlInput1" class="form-label" >Dirección de correo</label>
                 <input type="email" class="form-control" id="exampleFormControlTextarea1" placeholder="name@example.com">
               </div>
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Deporte</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-              </div>
-              <div class="mb-3">
+
+              <div class="servicios">
+                <label for="servicios">Deseo información acerca de:</label>
+                <select id="servicios" name="servicios[]" multiple>
+                  <option value="bioimpedancia">Bioimpedancia</option>
+                  <option value="antropometria">Antropometría</option>
+                  <option value="adistancia">Entrenamiento a distancia</option>
+                  <option value="equipos">Entrenamiento para equipos deportivos</option>
+                  <option value="enlinea">Entrenamiento en línea</option>
+                  <option value="gps">Gps y monitoreo cardíaco</option>
+                  <option value="lesiones">Rehabilitación de lesiones</option>
+                  <option value="personalizado">Entrenamiento personalizado</option>
+                  <option value="pliometria">Test de pliometría</option>
+                </select>
+            
+                </div>
+         
+              <div class="consulta">
                 <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
                 <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
               </div>
-              <button><a href="#">Enviar</a></button>
+              <button><a href="boton">Enviar</a></button> 
+            </form>
             </fieldset>
 
 
@@ -81,7 +104,7 @@
       <h2 id= "whatsapp">También podes contactarnos por whatsapp</h2>
             <a href= "https://wa.me/+5491150494316" target="_blank"> 
                 
-                <i class="fa-brands fa-whatsapp fa-beat" style="color: #1fc309;">Whatsapp</i>
+                <i class="fa-brands fa-whatsapp fa-beat" style="color: #1fc309;">Aquí</i>
             </section>
             
             <section id="mapa"

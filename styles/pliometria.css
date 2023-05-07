@@ -69,7 +69,7 @@ h3, h1{
     margin: 0.4rem;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-  
+    color: #fff;
 }
 
   .contenedor-principal button:hover {
