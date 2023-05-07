@@ -100,6 +100,21 @@ img{
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
+#primera p,
+#segunda p,
+#tercera p {
+    visibility: hidden;
+    padding: 1.0rem .5rem;
+    padding-bottom: .5rem;
+    text-align: center;
+}
+
+#primera:hover p,
+#segunda:hover p,
+#tercera:hover p {
+    visibility: visible;
+}
+
 #primera:hover,
 #segunda:hover,
 #tercera:hover {
