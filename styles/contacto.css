@@ -1,16 +1,85 @@
 @import url(menu.css);
 @import url(footer.css);
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
 
-main
-{
+ul,li {
+  text-decoration: none;
+  list-style: none;
+}
+
+#contenedor {
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+  padding: 2rem 0 8rem 0;
   text-align: center;
   font-style: bold;
   background-image: url(../img/fondo-contacto.jpg);
   background-size: cover;
 
-  
 }
+
+#titulo {
+  display: flex;
+  color: white;
+  margin: 0rem 40% 0 2rem;
+  padding: 6rem 3rem;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-style: italic;
+  font-weight: 900;
+
+}
+
+#contenedor-hijo {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 3rem 0;
+  background-color: rgba(190, 190, 190, 0.664);
+  align-items: center;
+  text-align: center;
+  height: 50rem;
+
+}
+
+#contenedor-nieto {
+  padding: 0 1.5rem;
+  font-size: 1rem;
+  border: 2px solid red;
+  width: 50%;
+}
+
+#formulario-text {
+  text-align: start;
+}
+
+#formularios {
+  background-color: azure;
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-radius: 0rem 2rem 2rem 0rem;
+  width: 50%;
+}
+
+#mapa iframe{
+  height: 10rem;
+  max-width: 60%;
+}
+
+/* FORMULARIO */
+
+
+
+/*
+
+
 main h1 {
 
     text-align: center;
@@ -145,4 +214,4 @@ main h1 {
    
   }
  
- 
+ */
