@@ -146,6 +146,8 @@ h3, h1{
     color: var(--clr-dark)
     }
   #contacto h1:hover 
-  { background-color: var(--clr-light)
+  { background-color: var(--clr-light);
+    color: var(--clr-dark)
+    
   }
     
