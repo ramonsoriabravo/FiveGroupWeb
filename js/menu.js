@@ -1,0 +1,22 @@
+//Funcionamieneto del menu desplagable
+
+const navToggle = document.querySelector(".nav-toggle");
+const navMenu = document.querySelector(".nav-menu");
+
+/*Con click en toogle, se agrega o quita la clase
+nav-menu_visible y muestra/oculta el menu*/
+navToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("nav-menu_visible");
+});
+
+/*Selecciona todos los links con # y agrega evento click
+Cando haga click en el enlace, borre clase 
+nav-menu_visible y el menu se oculte*/
+const menuLinks = document.querySelectorAll('.nav-menu a[href^="#"');
+console.log(menuLinks);
+
+menuLinks.forEach(menuLink => {
+  menuLink.addEventListener("click", function () {
+    navMenu.classList.remove("nav-menu_visible");
+  })
+})

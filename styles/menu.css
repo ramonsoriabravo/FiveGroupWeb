@@ -21,7 +21,7 @@ header {
     left: 0;
 
     height: 40px;
-    z-index: 1;    
+    z-index: 1000;       
 }
 
 header h1 {
@@ -45,33 +45,44 @@ header h1 {
 
 /* ------------- MENU DE NAVEGACION ------------ */
 
-.fa-solid {
-    /* fa-solid es una clase de fontawesome (icono de barritas para el menu desplegable)
-     con esto pongo el icono de barras en blanco a la derecha arriba*/
-    color: white;
-    font-size: 1.6rem;
+.nav-toggle {
     position: absolute;
     top: 5px;
     right: 5px;
+    border: 0;
+    cursor: pointer;
+    display: block;
+    z-index: 2000;    
+}
+
+.nav-toggle .fa-solid {
+    color: white;
+    background-color: rgb(55, 55, 197);
+    font-size: 1.6rem;
 }
 
 .nav-menu {
     background-color: rgba(0, 0, 255, 0.5);
     text-align: center;
     border-radius: 10px;
-    /* A partir de acá posiciona el menu a la derecha y arriba, pero debajo del header y al 50%*/
-    position: absolute;
+    position: fixed;
     top: 40px;    
-    right: 0;
-    /* top: -130px; */    
-    transition: top 1s;
+    right: -60%;    
+    transition: right .3s;
     width: 60%;
-    border-radius: 0 0 0.5rem 0.5rem;   
+    border-radius: 0 0 0.5rem 0.5rem; 
+    z-index: 3000;   
+    /* height: calc(100% - 40px); */
+    /* overflow-y: auto;      */
+}
+
+.nav-menu_visible {
+	/* top: 40px; */
+    right: 0;
 }
 
 
-.nav-menu a {
-    /*font-size: 2.5vw;*/
+.nav-menu a {   
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
 
@@ -135,7 +146,7 @@ header h1 {
         position: static;
     }
 
-    .fa-solid {
+    .nav-toggle {
         display: none;
     }
 
