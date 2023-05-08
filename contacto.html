@@ -66,11 +66,13 @@
                 <section id="formulario-text">
                     <h3>Completá el formulario para contactarte con nosotros.</h3>
                     <ul>
-                        <li>Direccion: Olavarria 5433, Caba</li>
+                        <li>Direccion: Calle Falsa 123, Caba</li>
                         <li>Telefono: 1140987636</li>
                     </ul>
-                    <h3 id= "whatsapp">También podes contactarnos por whatsapp</h3>
-                    <i class="fa-brands fa-whatsapp fa-beat" style="color: #1fc309;"><a href= "https://wa.me/+5491150494316" target="_blank">AQUI</a></i>
+                    <section id="whatsapp">
+                        <h3>También podes contactarnos por whatsapp</h3>
+                        <a href= "https://wa.me/+5491150494316" target="_blank" class="whatsapp"><i class="fa-brands fa-whatsapp fa-beat" style="color: #0e5205;"></i></a>
+                    </section>
                 </section> 
             
                 <section id="mapa">
@@ -84,7 +86,7 @@
                     
                     <section id="personal">
                         <section class="nombre">
-                            <label for="name" class="grupo">Nombre y Apellido: </label>
+                            <label for="name" class="grupo">Nombre y apellido: </label>
                             <input type="text" name="name" id="name" required placeholder="Ingrese su nombre y apellido aqui.." class="grupo">
                         </section>
                 
@@ -96,21 +98,41 @@
 
                         <section class="mail">
                             <label for="email">Mail: </label>
-                            <input type="email" name="email" id="email" required>
+                            <input type="email" name="email" id="email" required placeholder="Ingrese su mail aqui..">
                         </section>
                     </section>
 
                     <section id="servicios">
                         <label for="service">Que servicios deseo contratar: </label>
-                        <input type="checkbox" name="service" id="service"> Bioimpedancia
-                        <input type="checkbox" name="service" id="service"> Antropometría
-                        <input type="checkbox" name="service" id="service"> Entrenamiento a distancia
-                        <input type="checkbox" name="service" id="service"> Entrenamiento para equipos deportivos
-                        <input type="checkbox" name="service" id="service"> Entrenamiento en línea
-                        <input type="checkbox" name="service" id="service"> Gps y monitoreo cardíaco
-                        <input type="checkbox" name="service" id="service"> Rehabilitación de lesiones
-                        <input type="checkbox" name="service" id="service"> Entrenamiento personalizado
-                        <input type="checkbox" name="service" id="service"> Test de pliometría
+
+                        <section id="opciones">
+                            <input type="checkbox" name="bioimpedancia" id="bioimpedancia" class="checkbox">
+                            <label for="bioimpedancia" class="checkbox">Bioimpedancia</label> 
+
+                            <input type="checkbox" name="antropometria" id="antropometria" class="checkbox"> 
+                            <label for="antropometria" class="checkbox">Antropometría</label>
+
+                            <input type="checkbox" name="distancia" id="distancia" class="checkbox"> 
+                            <label for="distancia" class="checkbox">Entrenamiento a distancia</label>
+
+                            <input type="checkbox" name="equipos-deportivos" id="equipos-deportivos" class="checkbox"> 
+                            <label for="equipos-deportivos" class="checkbox">Entrenamiento para equipos deportivos</label>
+                            
+                            <input type="checkbox" name="linea" id="linea" class="checkbox"> 
+                            <label for="linea" class="checkbox">Entrenamiento en línea</label>
+                            
+                            <input type="checkbox" name="monitoreo" id="monitoreo" class="checkbox"> 
+                            <label for="monitoreo" class="checkbox">Gps y monitoreo cardíaco</label>
+                            
+                            <input type="checkbox" name="rehabilitacion" id="rehabilitacion" class="checkbox"> 
+                            <label for="rehabilitacion" class="checkbox">Rehabilitación de lesiones</label>
+                            
+                            <input type="checkbox" name="personalizado" id="personalizado" class="checkbox"> 
+                            <label for="personalizado" class="checkbox">Entrenamiento personalizado</label>
+                            
+                            <input type="checkbox" name="test-pilometria" id="test-pilometria" class="checkbox"> 
+                            <label for="test-pilometria" class="checkbox">Test de pliometría</label>
+                        </section>
                     </section>
 
                     <section id="comentarios">

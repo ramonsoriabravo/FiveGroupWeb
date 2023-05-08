@@ -20,7 +20,7 @@ ul,li {
   font-style: bold;
   background-image: url(../img/fondo-contacto.jpg);
   background-size: cover;
-
+  background-position: center;
 }
 
 #titulo {
@@ -32,49 +32,154 @@ ul,li {
   font-size: 2.5rem;
   font-style: italic;
   font-weight: 900;
-
 }
 
 #contenedor-hijo {
   display: flex;
   flex-direction: row-reverse;
   padding: 3rem 0;
-  background-color: rgba(190, 190, 190, 0.664);
-  align-items: center;
+  background-color: rgba(190, 190, 190, 0.75);
+  align-items: start;
   text-align: center;
-  height: 50rem;
-
+  height: 80%;
 }
 
+
 #contenedor-nieto {
-  padding: 0 1.5rem;
+  padding: 2rem 1rem;
   font-size: 1rem;
-  border: 2px solid red;
   width: 50%;
+  height: 100%;
 }
 
 #formulario-text {
   text-align: start;
+  font-size: 1.2rem;
 }
 
-#formularios {
-  background-color: azure;
+#formulario-text h3 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#formulario-text li {
+  padding-bottom: .8rem;
+}
+
+#formulario-text ul {
+  padding-bottom: 1rem;
+}
+
+#whatsapp {
   display: flex;
-  flex-direction: column;
-  margin-right: 2rem;
-  padding: 2rem 1rem;
-  text-align: center;
-  border-radius: 0rem 2rem 2rem 0rem;
-  width: 50%;
+  flex-direction: row;
+  column-gap: 1.5rem;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 1rem;
+}
+
+#whatsapp i {
+  font-size: 2rem;
+  margin-bottom: .5rem;
 }
 
 #mapa iframe{
-  height: 10rem;
-  max-width: 60%;
+  max-width: 80%;
+  border-radius: 1rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, .5);
 }
 
 /* FORMULARIO */
 
+#formularios {
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+  padding: 2rem 5%;
+  text-align: center;
+  border-radius: 0rem 2rem 2rem 0rem;
+  width: 50%;
+  height: 80%;
+}
+
+#formularios h2 {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+#formularios input {
+  padding: .5rem;
+  margin: .3rem;
+  width: 90%;
+  border-radius: 1rem;
+  border: 1px solid black;
+}
+
+.nombre,
+.telefono,
+.mail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center ;
+  text-align: start;
+  font-weight: bold;
+}
+
+.nombre label{
+  min-width: max-content;
+  display: inline;
+}
+
+
+
+#servicios {
+  padding-top: 1rem;
+  text-align: start;
+  font-weight: bold;
+}
+
+#opciones {
+  padding: 1rem 0;
+  font-weight: normal;
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: 1rem 30% 1rem 30%;
+  grid-template-rows: auto auto auto auto;
+  align-items: center;
+}
+
+.checkbox {
+  padding: .5rem 0;
+}
+
+#comentarios {
+  margin: .5rem 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: start;
+  font-weight: bold;
+}
+
+#comentarios textarea {
+  width: 100%;
+}
+
+.enviar {
+  text-align: center;
+}
+
+.enviar input {
+  text-transform: uppercase;
+}
+
+.enviar input:hover {
+  background-color: #000;
+  color: white;
+}
 
 
 /*
@@ -215,3 +320,69 @@ main h1 {
   }
  
  */
+
+ /* MEDIA QUERY */
+
+@media screen and (min-width:700px) and (max-width:900px) {
+
+  #titulo {
+    margin: 0rem 25% 0 1rem;
+    padding: 4rem 2rem;
+  }
+
+  #opciones {
+    grid-template-columns: 2rem 40% 2rem 40%;
+    grid-template-rows: auto auto auto auto;
+    
+  }
+
+  #contenedor-nieto {
+    padding: 1rem 1rem 1rem .5rem;
+  }
+
+  #mapa iframe{
+    max-width: 90%;
+  } 
+}
+
+@media screen and (max-width: 700px) {
+ 
+  #titulo {
+    margin: auto;
+    padding: 3rem 1rem;
+    font-size: 1.5rem;
+  }
+
+  #contenedor-hijo {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  #contenedor-nieto {
+    padding: 1rem .5rem;
+    font-size: .7rem;
+    width: 100%;
+  }
+
+  #mapa iframe {
+    max-width: 95%;
+    max-height: 10rem;
+  }
+
+  #formulario-text {
+    font-size: 1rem;
+
+  } 
+
+  #formularios {
+    margin: auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 100%;
+  }
+
+}
