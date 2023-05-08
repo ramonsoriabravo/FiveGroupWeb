@@ -13,9 +13,20 @@ display:inline-block;
  grid-template-columns: 1fr 1fr;
     
  }
+ #title
+ {color: black;
+    margin-top: 4rem;
+    padding: 2.5rem;
+    background-color: black ;
+ }
+
  h1{
 background-color:rgb(153, 152, 152);
 font-size: 1rem;
+text-align: center;
+margin: 2rem;
+padding: 2rem;
+color: black;
  }
  
  h2{
@@ -24,26 +35,30 @@ font-size: 1rem;
     padding: 2rem;
     background-color: rgb(159, 193, 204);
     font-size: 1.5rem;
- }
+    text-align: center;
+}
+
  img{
-  width: auto;
-     min-width: 9rem;
-     max-width: 40rem;
+
+     width: auto;
+     min-width: 4.5rem;
+     max-width: 20rem;
      border-radius: 1rem;
      margin: 1rem;
-     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
      background-color: aliceblue;
      align-items: center;
+     
  }
      
 
 
 
 .main-contenedor-padre{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    flex-direction: row;
     align-items: center;
-    align-content: space-between ;
+    align-content: space-around ;
+    justify-content: space-between;
     background-color: black;
     color: black;
     }
@@ -56,65 +71,78 @@ font-size: 1rem;
      min-width: 9rem;
      max-width: 40rem;
      margin: 1rem;
-     background-color: aliceblue;
      align-items: center;
-     
-     
  }
-   
-.contenedor-hijo-gps2, image{
+    .contenedor-hijo-equipos, image{
     border-radius: 1rem;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
     width: auto;
      min-width: 9rem;
      max-width: 40rem;
      margin: 1rem;
-     background-color: aliceblue;
      align-items: center;
- }
+     
+     }
+    
 
-.contenedor-hijo-gps1 {
+    .contenedor-hijo-gps1 {
     font-size: 1.5rem;
     text-align: center;
     margin: 2rem;
     padding: .5rem;  
-    display: flex;
+    display: grid;
     align-items: flex-start;
 }
 
 
-.contenedor-hijo-gps2 {
-font-size: 1.5rem;
- text-align: center;
-margin: 2rem;
- padding: .5rem;  
- display: flex;
-    align-items: flex-end;
+    .contenedor-hijo-equipos {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 2rem;
+    padding: .5rem;  
+    display: grid;
+    align-items: flex-start;
 }
 
 #nuestros-equipos
-.contenedor-hijo-equipos {
-font-size: 1.5rem;
- text-align: center;
-margin: 2rem;
- padding: .5rem;  
- display: flex;
-    align-items: flex-end;
-}
-#gps, #gps2 article {
-    border-radius: 15px;
-    padding: 1rem;
-}
-
-#nosotros {
-text-align: center;
-   height: auto;
-   width: auto;
+    .contenedor-hijo-equipos {
+    display: flex;
+    align-items:center;
+    font-size: 1.5rem;
+    text-align: center;
     margin: 2rem;
-    padding: 1.5rem;  
-    text-align: center; 
+    padding: .5rem;  
+  
 }
 
+.contenedor-hijo2-variables{
+    box-sizing: border-box;
+    align-items: center;
+}
+  
+
+#gps
+.contenedor-padre2-variables
+{
+    text-align: center;
+    height: auto;
+    width: auto;
+    margin: 2rem;
+    padding: 1.5rem;     
+    background-color: black;
+    color: white; 
+}
+.contenedor-hijo2-variables
+{ 
+    text-align: center;
+    height: auto;
+    width: auto;
+     margin: 2rem;
+     padding: 1.5rem;  
+     text-align: center;
+     color: white; 
+      
+}
 #nosotros,h1{
     font-size: 16;
     margin: .5rem;
@@ -128,11 +156,15 @@ text-align: center;
     text-align: center; 
 }
 
-#contacto h1{
+#contacto{
     background-color: var(--clr-main);
     color: var(--clr-dark)
     }
-#contacto h1:hover 
+    .h1{
+        text-align: center; 
+        font-style: bold;
+    }
+#contacto:hover
   { background-color: var(--clr-light);
     color: var(--clr-dark)
   }
