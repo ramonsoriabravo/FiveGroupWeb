@@ -1,66 +1,158 @@
 @import url(menu.css);
 @import url(footer.css);
 
-*{
+* {
     font-family: 'Roboto', sans-serif;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 
-main{
+html {
+    scroll-behavior: smooth;
+}
+
+section[id] {
+    scroll-margin-top: 40px;
+}
+
+main {
     margin: auto;
-    width: 75%;
+    max-width: 60rem;
     background-color: gray;
-    min-width: 50rem;
 }
 
-h1, h2{
+body {
+    background-color: #a5adb4;
+}
+
+p {
+    padding: 10px 1.5rem;
+}
+
+h1,
+h2 {
     font-family: 'Roboto Condensed', sans-serif;
 }
-h2{
+
+h1 {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+    margin-left: 1rem;
+}
+
+h2 {
     font-weight: 600;
     font-size: 1.5rem;
 }
-h1{
-    font-weight: 700;
-    font-style: italic;
-    font-size: 1.7rem;
-    margin-bottom: 8px;
-}
 
-body{
-    background-color: #a5adb4;    
-}
+/*************/
 
-#intro{ 
+#intro {
     background-color: gainsboro;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
     border-radius: 0 0 15px 15px;
-    padding: 1%;
-    margin-bottom:1rem;
-}
-#intro p{
-    font-size: 1.2rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
 }
 
-.Utilidades{
+#intro p {
+    font-size: 1.1rem;
+}
+
+#intro a {
+    font-weight: bold;
+    padding: 0.2rem 0.5rem;
+
+    background-color: rgba(194, 191, 191, 0.726);
+    border-radius: 15px;
+    color: black;
+}
+
+#intro a:hover {
+    background-color: rgb(51, 51, 250);
+    color: white;
+}
+
+#intro a:visited {
+    color: black;
+}
+
+#intro a:link {
+    color: rgb(7, 7, 7);
+}
+
+#intro a:hover {
+
+    color: white;
+}
+
+/**********************************/
+
+.utilidades {
     background-color: gainsboro;
-    border-radius: 8px 0 0 8px;
-    padding:1%;
     margin: auto;
-    max-width:40%;
-    position: relative;
-    right: 28%;
+
+    border-radius: 8px 0 0 8px;
+    width: 95%;
 }
 
-.ServiciosRecuperacion{
-    background-color: grey; 
+.utilidades h4 {
+    padding: 1rem;
+}
+
+.utilidades article {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.utilidades .utilidades-imagen {
+    align-items: center;
+    max-width: 90%;
+}
+
+.utilidades .utilidades-imagen img {
+    width: 235px;
+}
+
+.utilidades .utilidades-texto {
+    background-color: #a5adb4;
+    margin: 1rem;
+    padding: 1.5rem;
+    width: 200px;
+    border-radius: 1rem;
+}
+
+.serviciosRecuperacion {
+    background-color: grey;
     text-align: center;
     padding-top: 2rem;
+
 }
 
-#id_presoterapia{
+#id_presoterapia {
     border-radius: 15px 15px 0 0;
 }
-p{
-    padding:  10px 2rem;
+
+#id_presoterapia p {
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+
+/******************************/
+
+@media screen and (min-width: 500px) {
+    .utilidades .utilidades-imagen img {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+
+    section[id] {
+        scroll-margin-top: 85px;
+    }
 }
