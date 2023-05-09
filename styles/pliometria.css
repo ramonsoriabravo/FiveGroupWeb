@@ -10,46 +10,82 @@
   }
   
 
-main
-{ text-align: justify;
+#main
+{   box-sizing: border-box;
+    text-align: justify;
     color: black;
     font-size: 13;
     margin: auto;
+    background-color: black;
+    padding: 1.5rem;
+    }
+    
+ #title {
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+  font-style: uppercase;
+    }
      
-}
-h2{
-  color: black;
-  font-size: 26;
+.h2{
+   font-size: 4rem;
+   background-color: rgb(158, 157, 157) ;
+   
 
 }
 h3, h1{
   text-align: center;
-  margin: auto;
-  padding: 1.5rem;
+  margin: 1rem;
+  padding: .5rem;
   color: black;
-
+  font-style: bold;
+  background-color:rgb(158, 157, 157) ;
+  border-radius: 30px 0 0 30px;
+  opacity: .8;
 }
 
-
+#main
 .contenedor-principal {
+    margin: .5 rem;
+    padding: 2rem;
+    box-sizing: border-box;
     padding: 3rem;
-    background-image: url(../img/pliometria.jpg);
     border-bottom: 5px solid black;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     text-align: center;
+    background-image: url(../img/pliometria.jpg);
+    font-family: bold;
     
   }
   
   .contenedor-principal h3{
     text-transform: uppercase;
     padding: 2rem;
+    animation: myAnimation 1s;
+    position: relative;
+    animation: myAnimation 1s;
+    animation-fill-mode: forwards;
+    animation-delay: .2s;
   }
+  
+  @keyframes myAnimation {
+    from {
+      top: -100px;
+    }
+    to {
+      top: 0;
+    }
+  }
+    
+
    
   .contenedor-principal p{
-    font-size: 16;
+    font-size: 1.5rem;
     color: #fff;
+
   }
   
   .contenedor-principal a:visited{
@@ -80,35 +116,48 @@ h3, h1{
 }
 
 
+.contenedor-padre {
+  border-radius: 30px 0 0 30px;
+  background-color: rgb(158, 157, 157);
+  opacity: .8;
+  animation: myAnimation 1s;
+  position: relative;
+  animation: myAnimation 1s;
+  animation-fill-mode: forwards;
+  animation-delay: .2s;
+}
 
+@keyframes myAnimation {
+  from {
+    top: -100px;
+  }
+  to {
+    top: 0;
+  }
+}
   #primera-fila,
   #tercera-fila {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-    align-content: space-around;
-    margin: auto;
+   
+    margin: .5;
     padding: .5rem;
 
-    
+  }
+  .article-container{
+    color: black;
   }
   
   #segunda-fila, 
   #cuarta-fila {
-    display: flex;
-    flex-direction: row;
-    align-content: space-around;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin: auto;
+
+    margin: .5;
     padding: .5rem;
   }
-  
+
   .primera-fila,
   .tercera-fila {
     background-color: var(--clr-main);
-    color: var(--clr-dark);
+    
+    
   }
   
   .primera-fila:hover,
@@ -141,13 +190,15 @@ h3, h1{
     
   }
 
-  #contacto h1{
+  #contacto h2{
     background-color: var(--clr-main);
-    color: var(--clr-dark)
+    color: var(--clr-dark);
+    text-align: center;
     }
-  #contacto h1:hover 
+
+  #contacto h2:hover 
   { background-color: var(--clr-light);
     color: var(--clr-dark)
-    
+  
   }
     
