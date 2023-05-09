@@ -3,9 +3,10 @@
 
 
 #main, h1
-{color: black;
-    margin-top: 3rem;
-    padding-top: 3rem;
+{color: white;
+    margin-top: 1rem;
+    padding-top: 1rem;
+   
     
 }
 .main-contenedor-padre{
@@ -13,20 +14,20 @@ display:inline-block;
  grid-template-columns: 1fr 1fr;
     
  }
+
  #title
  {color: black;
-    margin-top: 4rem;
-    padding: 2.5rem;
+   margin: 0rem;
+   padding: .5rem;
+   
     background-color: black ;
  }
-
+.main-contenedor-padre
  h1{
-background-color:rgb(153, 152, 152);
+background-color: black;
 font-size: 1rem;
 text-align: center;
-margin: 2rem;
-padding: 2rem;
-color: black;
+color: white;
  }
  
  h2{
@@ -41,24 +42,25 @@ color: black;
  img{
 
      width: auto;
-     min-width: 4.5rem;
-     max-width: 20rem;
+     min-width: 5.5rem;
+     max-width: 25rem;
      border-radius: 1rem;
      margin: 1rem;
      background-color: aliceblue;
      align-items: center;
+     padding: 1rem;
      
  }
      
-
-
-
 .main-contenedor-padre{
     
     align-items: center;
     align-content: space-around ;
     justify-content: space-between;
-    background-image: url(../img/);
+    background-image: url(../img/monitoreo-cardiaco-gps.jpg);
+    background-size: cover;
+    background-position: center;
+    
     color: black;
     }
 
@@ -71,6 +73,7 @@ color: black;
      max-width: 40rem;
      margin: 1rem;
      align-items: center;
+     opacity: 1;
  }
     .contenedor-hijo-equipos, image{
     border-radius: 1rem;
@@ -91,6 +94,28 @@ color: black;
     padding: .5rem;  
     display: grid;
     align-items: flex-start;
+    animation: entrada 1s;
+
+}
+
+@keyframes entrada {
+    from {
+      opacity: 0;
+      transform: translateX(-50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+.contenedor-hijo-gps1,p{
+    font-size: 8;
+    color: black;
+}
+.contenedor-hijo2-variables,ul{
+    font-size: 8;
+    color: black;
 }
 
 
@@ -101,7 +126,21 @@ color: black;
     padding: .5rem;  
     display: grid;
     align-items: flex-start;
+    animation: entrada 1s;
+
 }
+
+@keyframes entrada {
+    from {
+      opacity: 0;
+      transform: translateX(-50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
 
 #nuestros-equipos
     .contenedor-hijo-equipos {
@@ -117,6 +156,7 @@ color: black;
 .contenedor-hijo2-variables{
     box-sizing: border-box;
     align-items: center;
+
 }
   
 
@@ -148,84 +188,41 @@ color: black;
     padding: .5rem;  
     text-align: center; 
 }
-#nosotros,git h2{
+#nosotros, h2{
     font-size: 9;
     margin: 1.5rem;
     padding: .5rem;  
     text-align: center; 
 }
-
-#contacto{
-    background-color: var(--clr-main);
-    color: var(--clr-dark)
-    }
-    .h1{
-        text-align: center; 
-        font-style: bold;
-    }
-#contacto:hover
-  { background-color: var(--clr-light);
-    color: var(--clr-dark)
+/* ////...contacto */
+#contacto {
+    text-align: center;
   }
-
+  
+  #contacto {
+    text-transform: uppercase;
+  }
+  
+  #contacto:hover {
+    background-color: #000;
+    color: white;
+  }
 /* MEDIA QUERY */
 
-@media screen and (min-width:700px) and (max-width:900px) {
-
-  #titulo {
-    margin: 0rem 25% 0 1rem;
+@media screen and (min-width:700px) and (max-width:900px)
+{
+  #title {
+    margin: auto;
     padding: 4rem 2rem;
-  }
-
-  #opciones {
-    grid-template-columns: 2rem 40% 2rem 40%;
-    grid-template-rows: auto auto auto auto;
+ } }
     
-  }
-
-  #contenedor-nieto {
-    padding: 1rem 1rem 1rem .5rem;
-  }
-
-  #mapa iframe{
-    max-width: 90%;
-  } 
-}
+ 
 
 @media screen and (max-width: 700px) {
  
-  #titulo {
+  #title {
     margin: auto;
     padding: 3rem 1rem;
     font-size: 1.5rem;
-  }
-
-  #contenedor-hijo {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 0;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-  }
-
-  #contenedor-nieto {
-    padding: 1rem .5rem;
-    font-size: .7rem;
-    width: 100%;
-  
-  }
-
-  #formulario-text {
-    font-size: 1rem;
-
-  } 
-
-  #formularios {
-    margin: auto;
-    padding: 1rem;
-    border-radius: 1rem;
-    width: 100%;
-  }
-
-}
+  }}
+ 
