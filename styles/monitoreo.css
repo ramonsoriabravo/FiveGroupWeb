@@ -54,12 +54,11 @@ color: black;
 
 
 .main-contenedor-padre{
-    display: grid;
-    flex-direction: row;
+    
     align-items: center;
     align-content: space-around ;
     justify-content: space-between;
-    background-color: black;
+    background-image: url(../img/);
     color: black;
     }
 
@@ -149,7 +148,7 @@ color: black;
     padding: .5rem;  
     text-align: center; 
 }
-#nosotros,h2{
+#nosotros,git h2{
     font-size: 9;
     margin: 1.5rem;
     padding: .5rem;  
@@ -169,3 +168,64 @@ color: black;
     color: var(--clr-dark)
   }
 
+/* MEDIA QUERY */
+
+@media screen and (min-width:700px) and (max-width:900px) {
+
+  #titulo {
+    margin: 0rem 25% 0 1rem;
+    padding: 4rem 2rem;
+  }
+
+  #opciones {
+    grid-template-columns: 2rem 40% 2rem 40%;
+    grid-template-rows: auto auto auto auto;
+    
+  }
+
+  #contenedor-nieto {
+    padding: 1rem 1rem 1rem .5rem;
+  }
+
+  #mapa iframe{
+    max-width: 90%;
+  } 
+}
+
+@media screen and (max-width: 700px) {
+ 
+  #titulo {
+    margin: auto;
+    padding: 3rem 1rem;
+    font-size: 1.5rem;
+  }
+
+  #contenedor-hijo {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  #contenedor-nieto {
+    padding: 1rem .5rem;
+    font-size: .7rem;
+    width: 100%;
+  
+  }
+
+  #formulario-text {
+    font-size: 1rem;
+
+  } 
+
+  #formularios {
+    margin: auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 100%;
+  }
+
+}
