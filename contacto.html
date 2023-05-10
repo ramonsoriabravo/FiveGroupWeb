@@ -23,6 +23,8 @@
 
     <script defer src="./js/menu.js"></script>
 
+    <script src="./js/contacto.js"></script>
+
     <title>Five Group - Contacto</title>
 </head>
 
@@ -82,24 +84,27 @@
 
             <section id="formularios">
                 <h2>Formulario de registro</h2>
-                <form action="Link" method="get" target="_blank">
+                <form action="link" method="get" target="_blank" id="formularioValidado">
                     
                     <section id="personal">
                         <section class="nombre">
                             <label for="name" class="grupo">Nombre y apellido: </label>
-                            <input type="text" name="name" id="name" required placeholder="Ingrese su nombre y apellido aqui.." class="grupo">
+                            <input type="text" name="name" id="name" placeholder="Ingrese su nombre y apellido aqui.." class="grupo">
                         </section>
+                        <p id="errorNombre"></p>
                 
                     <section id="contacto">
                         <section class="telefono">
                             <label for="phone">Telefono: </label>
                             <input type="number" name="phone" id="phone" placeholder="Ingrese su telefono aqui..">
                         </section>
+                        <p id="errorTelefono"></p>
 
                         <section class="mail">
                             <label for="email">Mail: </label>
-                            <input type="email" name="email" id="email" required placeholder="Ingrese su mail aqui..">
+                            <input type="email" name="email" id="email" placeholder="Ingrese su mail aqui..">
                         </section>
+                        <p id="errorMail"></p>
                     </section>
 
                     <section id="servicios">
@@ -133,15 +138,22 @@
                             <input type="checkbox" name="test-pilometria" id="test-pilometria" class="checkbox"> 
                             <label for="test-pilometria" class="checkbox">Test de pliometría</label>
                         </section>
+                        <p id="errorCheckbox"></p>
                     </section>
 
                     <section id="comentarios">
                         <label for="comentarios">Comentarios: </label>
                         <textarea name="comentarios" id="comentarios" cols="20" rows="5" placeholder="Ingrese su consulta aqui.."></textarea>
                     </section>
+
+                    <section id="terminos">
+                        <input type="checkbox" name="terminosCondiciones" id="terminosCondiciones" class="terminosCondiciones">
+                        <label for="terminosCondiciones" class="terminosCondiciones">He leído y acepto los <a href="https://www.argentina.gob.ar/terminos-y-condiciones" target="_blank">términos y condiciones de uso</a>.</label>
+                    </section>
+                    <p id="errorTerminos"></p>
                     
                     <section class="enviar">
-                        <input type="submit" value="Enviar">
+                        <input type="submit" value="Enviar" onclick="validarForm(event)">
                     </section>
                 </form>
             </section> 
