@@ -48,9 +48,9 @@ h3, h1{
 #main
 .contenedor-principal {
     margin: .5 rem;
-    padding: 2rem;
+    padding: .5rem;
     box-sizing: border-box;
-    padding: 3rem;
+    color: black;
     border-bottom: 5px solid black;
     background-repeat: no-repeat;
     background-size: cover;
@@ -58,6 +58,8 @@ h3, h1{
     text-align: center;
     background-image: url(../img/pliometria.jpg);
     font-family: bold;
+    width: 60rem;
+    height: 60rem;
     
   }
   
