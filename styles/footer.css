@@ -27,6 +27,7 @@ footer span {
     background-color: rgb(30, 27, 202);
     padding: 4px;
     border-radius: 20px;
+    white-space: nowrap;
 }
 
 #social{    
