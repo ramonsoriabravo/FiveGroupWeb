@@ -73,7 +73,7 @@ img {
 #about-container .about-info p {
     padding: 2rem 1.5rem;
     text-align: center;
-    background-color: rgba(253, 254, 255, 0.7);
+    background-color: rgba(253, 254, 255, 0.75);
     border-radius: 1rem;
     margin: .5rem;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
@@ -183,7 +183,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content:space-evenly;
-    padding-top: 1rem;
+    padding-top: 2rem;
     padding-bottom: 2rem;    
     align-content: center;
     margin: 0 1.5rem 5rem;
