@@ -1,21 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
 @import url(menu.css);
 @import url(footer.css);
 
-main{
-    text-align: center;
-    background-color: rgb(101, 138, 138);
- }
- 
- img{
-     width: 80%;
-     min-width: 9rem;
-     max-width: 40rem;
-     border-radius: 1rem;
-     margin: 1rem;
-     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
- }
+main {
+    margin: auto;
+    max-width: 70rem;
+    background-color: rgb(216, 216, 216);
+    padding-bottom: 1rem;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
 
- .duda{
-    width: 20%;
+body {
+    background-color: rgb(128, 127, 127);
+}
+
+span {
+    background-color: blue;
+    font-style: italic;
+    color: white;
+    padding: 0.2rem 0.6rem 0.1rem;
+    border-radius: 1rem;
+    white-space: nowrap;
+}
+
+#about-container h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: .5rem;
+    padding-bottom: 0;    
+}
+
+#about-container h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 90%;
+    margin: auto;
+}
+
+#about-container .titles {
+    font-size: 1.6rem;
+    color: #cfcece;
+    background-color: rgb(70, 69, 69);
+    padding: 0.7rem;
+    max-width: 95%;
+    margin-top: 3rem;
+    border-radius: 10px;   
+}
+
+img {
+    border-radius: 1rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* ///////////////// INFORMACION PRINCIPAL ///////////////////*/
+
+#about-container .about-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+    margin: 1rem 1.5rem 1.5rem;
+    background-image: url(../img/bg-sport-math.jpg);
+    background-size: cover;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+#about-container .about-info p {
+    padding: 2rem 1.5rem;
+    text-align: center;
+    background-color: rgba(253, 254, 255, 0.7);
+    border-radius: 1rem;
+    margin: .5rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#about-container .about-info img {
+    max-width: 90%;
+    height: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);   
+}
+
+/* ///////////////// INFORMACION DIRECTIVOS ///////////////////*/
+
+.about-managers{
+    margin: auto; 
+    text-align: center; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;    
+    align-content: center;
+    margin: 1rem 1.5rem;
+    overflow: hidden;
+}
+
+.about-managers article{
+    text-align: center;
+    background-color: white;    
+    padding: 2rem;
+    width: 80%;
+    min-width: 180px;
+    max-width: 400px;
+    border-radius: 1rem;
+    margin: .5rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.about-managers img{
+    width: 100%;
+    height: auto;
     border-radius: 50%;
- }
+}
+
+.about-managers .names{
+    font-size: 1.6rem; 
+    font-weight: 600;  
+}
+
+.about-managers .position{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: italic;
+    font-size: 1.3rem;
+}
+
+/* ///////////////// INFORMACION COORDINADORES ///////////////////*/
+
+#coordinators{
+    margin: auto; 
+    text-align: center; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;    
+    align-content: center;
+    margin: 1rem 1.5rem;
+}
+
+#coordinators article{
+    text-align: center;
+    background-color: white;    
+    padding: 2rem;
+    width: 20%;
+    min-width: 210px;
+    max-width: 400px;
+    border-radius: 1rem;
+    margin: .5rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+#coordinators .coord-image{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+#coordinators .coord-names{
+    font-size: 1.5rem; 
+    font-weight: 600;     
+}
+
+#coordinators .coord-phone{
+    font-size: 1.2rem;   
+}
+
+#coordinators .coord-country{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: italic;
+    font-size: 1.4rem; 
+}
+
+/* ///////////////// INFORMACION PERSONAL DE IT ///////////////////*/
+
+.it-staff{
+    margin: auto; 
+    text-align: center; 
+    background-image: url(../img/bg-html.webp);
+    background-size:cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    padding-top: 1rem;
+    padding-bottom: 2rem;    
+    align-content: center;
+    margin: 0 1.5rem 5rem;
+    border-radius: 10px 10px 1rem 1rem;
+    overflow: hidden;
+}
+
+.it-staff article{
+    text-align: center;
+    background-color: rgb(46, 46, 46);    
+    padding: 2rem;
+    width: 20%;
+    min-width: 210px;
+    max-width: 400px;
+    border-radius: 1rem;
+    margin: .5rem;
+    box-shadow: 0px 4px 10px rgba(26, 252, 5, 0.5);
+    overflow: hidden;
+}
+
+.it-staff .it-image{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.it-staff .it-names{
+    color: rgb(207, 206, 206);
+    font-style: italic;
+    font-size: 1.5rem; 
+    font-weight: 600;
+    padding-bottom: 0.7rem;  
+}
+
+.it-staff .it-job{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: hsl(160, 98%, 44%);
+    font-weight: 400;
+    font-size: 1.6rem;   
+}
+
+
+/* ///////////////// END ///////////////////*/
+
+#about-end {
+    background-color: rgb(196, 196, 197);
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    margin: 1rem 1rem 3rem;
+}
+
+#about-end p {
+    padding: 1rem;
+}
+
+#invit-container {
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    min-width: 180px;
+    
+    text-align: center;
+    padding: 1rem;
+    max-width: 400px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    font-weight: 600;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+/*//// DEFINO EL CONTENEDOR GRID ////////*/
+#invit-container {
+    display: grid;
+    gap: 1rem;
+    grid-template: "texto  texto" auto 
+                    "imagen imagen" 1fr 
+                    "boton  boton" auto 
+                    / 1fr 1fr;
+
+    justify-items: center;
+}
+
+/*////// DEFINO LAS AREAS DEL GRID ///////*/
+#invit-container .invit-text {
+    grid-area: texto;
+}
+
+#invit-container .invit-image {
+    grid-area: imagen;
+}
+
+#invit-container .invit-button {
+    grid-area: boton;
+}
+
+#invit-container .invit-image {
+    margin: auto;
+    width: 100%;
+    max-width: 70%;    
+}
+
+
+/* ////// BOTON ///////*/
+
+#invit-container .invit-button {
+    width: 150px;
+    background-color: rgb(36, 36, 247);
+    color: white;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: .6rem .9rem;
+    margin: 0.4rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.753);
+    max-width: 75%;
+}
+
+#invit-container .invit-button:visited {
+    color: white;
+}
+
+#invit-container .invit-button:link {
+    color: yellow;
+}
+
+#invit-container .invit-button:hover {
+    color: yellow;
+    background-color: red;
+    font-size: 1rem;
+}
+
+/******************** PANTALLA MEDIANA *******************************/
+
+@media screen and (min-width: 700px) {
+
+    #about-container h1 {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    #about-container h2 {
+        font-size: 1.5rem;
+    }
+
+    /* ///////////////// INFORMACION PRINCIPAL ///////////////////*/
+
+   
+
+    /* ///////////////// INFORMACION DIRECTIVOS ///////////////////*/
+
+    .about-managers .names{
+        font-size: 1.8rem; 
+    }
+    
+    .about-managers .position{
+        font-size: 1.5rem;
+    }
+
+    /* ///////////////// END ///////////////////*/
+
+    #about-end>p {
+        padding: 2rem 2rem 0rem;
+    }
+
+    /*//// CAMBIO EN MAXIMO TAMAÑO DEL GRID */
+    #invit-container {
+        max-width: 700px;
+        padding: 1.5rem;
+    }
+
+    /*//// DEFINO EL CONTENEDOR GRID ////////*/
+    #invit-container {
+        grid-template: "imagen texto" auto "imagen texto" 1fr "imagen boton" auto / 70% 1fr;
+    }
+}
+
+/******************** PANTALLA GRANDE **********************************/

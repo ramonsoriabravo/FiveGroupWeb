@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
 
     <!-----  Google Fonts  -------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,53 +28,112 @@
 </head>
 
 <body>
-   <!-- //////////////////////// COMIENZO DEL HEADER //////////////////////-->
- <header>
-    <section class="logo">
-        <a href="index.html">
-            <h1 class="animate__animated animate__bounceInRight">FIVE GROUP</h1>
-        </a>
-    </section>
-    <button class="nav-toggle">
-        <i class="fa-solid fa-bars"></i>
-    </button>       
+    <!-- //////////////////////// COMIENZO DEL HEADER //////////////////////-->
+    <header>
+        <section class="logo">
+            <a href="index.html">
+                <h1 class="animate__animated animate__bounceInRight">Five Group</h1>
+            </a>
+        </section>
+        <button class="nav-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
 
-    <section class="nav-menu">
-        <nav class="nav-menu-items">
-            <a href="index.html#services-container" class="nav-menu-link" >Servicios</a>
-            <a href="quienessomos.html" class="nav-menu-link">Quienes somos</a>
-            <a href="recuperacion-fisica.html" class="nav-menu-link">Recuperacion Física</a>
-            <a href="contacto.html" class="nav-menu-link">Contacto</a>
-        </nav>
-    </section>
+        <section class="nav-menu">
+            <nav class="nav-menu-items">
+                <a href="index.html#services-container" class="nav-menu-link">Servicios</a>
+                <a href="quienessomos.html" class="nav-menu-link">Quienes somos</a>
+                <a href="recuperacion-fisica.html" class="nav-menu-link">Recuperacion Física</a>
+                <a href="contacto.html" class="nav-menu-link">Contacto</a>
+            </nav>
+        </section>
 
 
-    <section class="home-title">
-        <h2 class="animate__animated animate__bounceInLeft">Centro Integral de Entrenamiento y Evaluaciones Físicas
-            Deportivas</h2>
-    </section>
-</header>
+        <section class="home-title">
+            <h2 class="animate__animated animate__bounceInLeft">Centro Integral de Entrenamiento y Evaluaciones Físicas
+                Deportivas</h2>
+        </section>
+    </header>
 
-<!-- //////////////////////// FIN DEL HEADER //////////////////////-->
-
+    <!-- //////////////////////// FIN DEL HEADER //////////////////////-->
     <main>
-        <h1>Quienes somos?</h1>
 
-        <section>
-            <h2>Quienes somos?</h2>
-            <p>Lorem psum, dolor sit amet consectetur adipisicing elit. Dolore dolorum aspernatur voluptates distinctio
-                pariatur. Eveniet doloribus odio ut accusamus fuga veritatis quis recusandae, adipisci a voluptas
-                temporibus, exercitationem illo provident!</p>
+        <section id="about-container">
+            <h1>Quienes somos?</h1>
+            <article class="about-info">
+                <p>Somos un servicio médico multidisiplinario, especializado en medicina del deporte y actividad física.
+                    Contamos con personal altamente capacitado en el diagnóstico, tratamiento, rehabilitación de
+                    lesiones, nutrición, psicología deportiva y entrenamiento deportivo.</p>
+                <img src="./img/medicadeportiva.jpg" alt="Medica deportiva">
+            </article>
 
-            <img src="./img/enconstruccion.png" alt="imagen en construccion">
+            <h2 class="titles">Personal Directivo</h2>
+            <section class="about-managers">
+                <article>
+                    <img src="./img/director-medico.jpg" alt="Director Medico">
+                    <p class="names">Gregorio Casas</p>
+                    <p class="position">Director Area Médica</p>
+                </article>
+                <article>
+                    <img src="./img/director-deportes.png" alt="Director Entrenamiento">
+                    <p class="names">Leonardo Escaleras</p>
+                    <p class="position">Director Area Deportiva</p>
+                </article>
+            </section>
 
-            <p>Lorem psum, dolor sit amet consectetur adipisicing elit. Dolore dolorum aspernatur voluptates distinctio
-                pariatur. Eveniet doloribus odio ut accusamus fuga veritatis quis recusandae, adipisci a voluptas
-                temporibus, exercitationem illo provident!</p>
+            <h2 class="titles">Coordinadores</h2>
+            <section id="coordinators">
+                <article>
+                    <img class="coord-image" src="./img/coordinadora.jpg" alt="Coordinadora">
+                    <p class="coord-names">Alejandra Train</p>
+                    <p class="coord-phone"> (5411)789456</p>
+                    <p class="coord-country">Argentina</p>
+                </article>
+                <script src="./js/data.js"></script>
+            </section>
 
-            <h4>Quienes somos?</h4>
-            <img class="duda" src="./img/mrbean.jpg" alt="Quienes somos?">
+            <h2 class="titles">Personal de IT</h2>
+            <section class="it-staff">
+                <article>
+                    <img class="it-image" src="./img/it-staff-ray.jpg" alt="Coordinadora">
+                    <p class="it-names">Ramón Soria Bravo</p>
+                    <p class="it-job">Desarrollador Web</p>
+                    <p class="it-job">Programador</p>
+                </article>
+                <article>
+                    <img class="it-image" src="./img/it-capucha.jpg" alt="Coordinadora">
+                    <p class="it-names">Matías Iván Chirivella Alcántara</p>
+                    <p class="it-job">Desarrollador Web</p>
+                </article>
+                <article>
+                    <img class="it-image" src="./img/it-woman.jpg" alt="Coordinadora">
+                    <p class="it-names">Maria Victoria Galano</p>
+                    <p class="it-job">Desarrollador Web</p>
+                </article>
+                <article>
+                    <img class="it-image" src="./img/it-chico.jpg" alt="Coordinadora">
+                    <p class="it-names">Gabriel Emiliano Amarilla</p>
+                    <p class="it-job">Desarrollador Web</p>
+                </article>
 
+            </section>
+
+            <h2><span>Five-Group</span> Centro Integral de Entrenamiento y Evaluaciones Físicas Deportivas </h2>
+            <article id="about-end">
+                <p>En el ámbito de las Ciencias del Deporte, es muy útil para la valoración de la condición física, el
+                    control del entrenamiento, el análisis del rendimiento energético, el estudio de los efectos de la
+                    actividad física y el deporte competitivo en la estructura y composición corporal del individuo,
+                    selección de talentos y para estudios biomecánicos.</p>
+
+                <section id="invit-container">
+                    <p class="invit-text">Te invitamos a ponerte en contacto con nosotros para informarte mejor sobre
+                        todos nuestros servicios. Muchas gracias!!!
+                    </p>
+                    <img class="invit-image" src="./img/invitacion-medica.jpg" alt="Médica y paciente">
+                    <a class="invit-button" href="contacto.html">Contacto...</a>
+                </section>
+
+            </article>
 
         </section>
 
