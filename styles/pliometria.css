@@ -50,7 +50,7 @@ h3, h1{
     margin: .5 rem;
     padding: .5rem;
     box-sizing: border-box;
-    color: black;
+    
     border-bottom: 5px solid black;
     background-repeat: no-repeat;
     background-size: cover;
@@ -60,7 +60,7 @@ h3, h1{
     font-family: bold;
     width: 60rem;
     height: 60rem;
-    
+    color: black;
   }
   
   .contenedor-principal h3{

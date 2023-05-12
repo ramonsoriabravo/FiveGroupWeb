@@ -34,7 +34,7 @@ main{
 #lesiones
 .contenedor-padre{
    box-sizing: border-box;
-   background-color: rgb(163, 161, 161) ;
+  
     align-items: center;
     align-content: space-between ;
     background-color: gray;
@@ -43,6 +43,8 @@ main{
     }
 .contenedor-padre, h1{
     font-size: 2rem;
+    background-color: black;
+    color: white;
 }
 
 .contenedor-padre, h2{
@@ -55,17 +57,20 @@ main{
     width: auto;
 }
 
-.contenedor-hijo1 {
-    border-radius: 0 100px 0 30px;
-    box-sizing: border-box;
-    font-size: 1.5rem;
-    text-align: center;
-    height: auto;
-    width: auto;
-    margin: 2rem;
-    padding: .5rem;  
-    text-align: center; 
-    background-color:rgb(158, 157, 157) ;
+
+.title-prevencion{
+  display: flex;
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: rgb(136, 136, 136);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  padding: .5rem;
+  margin: .5rem;
+  border-radius: 0 100px 0 30px;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
 }
 .contenedor-hijo1{
     
@@ -82,20 +87,7 @@ main{
           transform: translateX(0);
         }
       }
-
-.contenedor-hijo2 {
-    border-radius: 0 100px 0 30px;
-    box-sizing: border-box;
-    font-size: 1.5rem;
-    text-align: center;
-    height: auto;
-    width: auto;
-    margin: 2rem;
-    padding: .5rem;  
-    text-align: center;
-    background-color:rgb(158, 157, 157) ;
-   
-}
+    
 
 .contenedor-hijo2 {
 animation: entrada 1s;
@@ -111,10 +103,119 @@ animation: entrada 1s;
     transform: translateX(0);
   }
 }
+#lesiones {
+  border-radius: 0 100px 0 30px;
+  height: auto;
+  width: auto;
+  margin: 2rem;
+  padding: 1.5rem;  
+  text-align: center; 
+  box-sizing: border-box;
+  background-color:white ;
+  
+}
 
-#lesiones article {
-    border-radius: 15px;
-    padding: 1rem;
+#lesiones h1{
+  border-radius: 0 100px 0 30px;
+  margin: .5rem;
+  padding: .5rem;  
+  text-align: center;
+  background-color: black; 
+  
+}
+
+#lesiones summary h1{
+display: flex;
+font-family: 'Roboto Condensed', sans-serif;
+background-color: rgb(136, 136, 136);
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.5rem;
+padding: auto;
+margin: auto;
+border-radius: 5px;
+cursor: pointer;
+text-align: center;
+justify-content: center;
+
+}
+#lesiones summary h2{
+  display: flex;
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: rgb(136, 136, 136);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 0 100px 0 30px;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  }
+
+#lesiones summary:hover {
+color: white;
+background-color: rgb(78, 76, 76);
+}
+
+#lesiones p {
+text-align: justify;
+padding: 1rem;
+}
+#lesiones2 {
+  border-radius: 0 100px 0 30px;
+  height: auto;
+  width: auto;
+  margin: 2rem;
+  padding: 1.5rem;  
+  text-align: center; 
+  box-sizing: border-box;
+  background-color:white ;
+   
+  
+}
+
+#lesiones2 h1{
+  
+  margin: .5rem;
+  padding: .5rem;  
+  text-align: center;
+  background-color: gray; 
+  border-radius: 0 100px 0 30px;
+  
+}
+
+
+.detalle-lesiones2{
+  display: flex;
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: rgb(136, 136, 136);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 0 100px 0 30px;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  list-style-type: none;
+  }
+ 
+
+#lesiones2 summary:hover {
+color: white;
+background-color: rgb(78, 76, 76);
+border-radius: 0 100px 0 30px;
+
+
+
+}
+
+#lesiones2 p {
+text-align: justify;
+padding: 1rem;
 }
 
 #nosotros {
@@ -136,25 +237,171 @@ animation: entrada 1s;
     text-align: center;
     background-color: gray; 
     
+    
 }
 #nosotros,h2{
     font-size: 9;
     margin: 1.5rem;
     padding: .5rem;  
     text-align: center; 
+    
 }
-#contacto {
-    text-align: center;
-  }
+
+#nosotros summary {
+  display: flex;
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: rgb(136, 136, 136);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  padding: auto;
+  margin: auto;
+  border-radius: 0 100px 0 30px;
+  cursor: pointer;
+  text-align: left;
+  justify-content: center;
+}
+span {
+  background-color: blue;
+  font-style: italic;
+  color: white;
+  padding: 0.2rem 0.6rem 0.1rem;
+  border-radius: 1rem;
+}
+
+#nosotros summary:hover {
+  color: white;
+  background-color: rgb(78, 76, 76);
+}
+
+#nosotros p {
+  text-align: justify;
+  padding: 1rem;
+}
+
+.contenedor-hijo2
+{
+ 
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 0 100px 0 30px;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+}
+#lesiones2 {
+  border-radius: 0 100px 0 30px;
+  height: auto;
+  width: auto;
+  margin: 2rem;
+  padding: 1.5rem;  
+  text-align: center; 
+  box-sizing: border-box;
+  background-color:white ;
+
   
-  #contacto {
-    text-transform: uppercase;
-  }
+}
+
+#lesiones2 h1{
   
-  #contacto:hover {
-    background-color: white;
-    color: white;
-  }
+  margin: .5rem;
+  padding: .5rem;  
+  text-align: center;
+  background-color: black; 
+  color: white;
+  
+  
+}
+#lesiones2,h2{
+  font-size: 9;
+  margin: 1.5rem;
+  padding: .5rem;  
+  text-align: center; 
+  background-color: rgb(136, 136, 136);
+}
+
+#lesiones2 summary {
+display: flex;
+font-family: 'Roboto Condensed', sans-serif;
+background-color: rgb(136, 136, 136);
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.5rem;
+padding: auto;
+margin: auto;
+border-radius: 0 100px 0 30px;
+cursor: pointer;
+text-align: left;
+justify-content: center;
+}
+
+
+#lesiones2 summary:hover {
+color: white;
+background-color: rgb(78, 76, 76);
+}
+
+#lesiones2 p {
+text-align: justify;
+padding: 1rem;
+}
+#lesiones2 summary {
+display: flex;
+font-family: 'Roboto Condensed', sans-serif;
+background-color: gray; ;
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.5rem;
+padding: auto;
+margin: auto;
+border-radius: 0 100px 0 30px;
+cursor: pointer;
+text-align: left;
+justify-content: center;
+}
+
+#contacto,
+.contacto
+.a{
+  
+  border-radius: 0 100px 0 30px;
+  height: auto;
+  width: auto;
+  margin: 2rem;
+  padding: 1.5rem;  
+  text-align: center; 
+  box-sizing: border-box;
+  background-color: rgb(136, 136, 136);
+ 
+}
+#contacto,
+.contacto h1
+{
+  margin: .5rem;
+  padding: .5rem;  
+  text-align: center;
+  background-color: white; 
+  
+}
+
+.contacto
+a:hover {
+  color: white;
+  background-color: rgb(78, 76, 76);
+  border-radius: 0 100px 0 30px;
+  height: auto;
+  width: auto;
+ 
+  text-align: center; 
+  box-sizing: border-box;
+}
+
+
 
 /* MEDIA QUERY */
 
@@ -174,9 +421,4 @@ animation: entrada 1s;
     padding: 3rem 1rem;
     font-size: 1.5rem;
 
-    #img {
-        width: 3 rem;
-        min-width: 3.5rem;
-        max-width: 15rem;
-  }}}
- 
+}}
