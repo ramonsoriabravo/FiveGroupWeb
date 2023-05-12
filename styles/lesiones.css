@@ -34,12 +34,11 @@ main{
 #lesiones
 .contenedor-padre{
    box-sizing: border-box;
-  
     align-items: center;
     align-content: space-between ;
     background-color: gray;
     color: black;
-    padding: 2rem;
+    padding: 1rem;
     }
 .contenedor-padre, h1{
     font-size: 2rem;
@@ -72,6 +71,7 @@ main{
   text-align: center;
   justify-content: center;
 }
+
 .contenedor-hijo1{
     
         animation: entrada 1s;
@@ -107,8 +107,8 @@ animation: entrada 1s;
   border-radius: 0 100px 0 30px;
   height: auto;
   width: auto;
-  margin: 2rem;
-  padding: 1.5rem;  
+  margin: .5rem;
+  padding: .5rem;  
   text-align: center; 
   box-sizing: border-box;
   background-color:white ;
@@ -226,7 +226,7 @@ padding: 1rem;
     padding: 1.5rem;  
     text-align: center; 
     box-sizing: border-box;
-    background-color:white ;
+    background-color:gray;
     
 }
 
@@ -243,7 +243,7 @@ padding: 1rem;
     font-size: 9;
     margin: 1.5rem;
     padding: .5rem;  
-    text-align: center; 
+    text-align: left;
     
 }
 
@@ -275,8 +275,9 @@ span {
 }
 
 #nosotros p {
-  text-align: justify;
+ 
   padding: 1rem;
+
 }
 
 .contenedor-hijo2
@@ -302,7 +303,7 @@ span {
   padding: 1.5rem;  
   text-align: center; 
   box-sizing: border-box;
-  background-color:white ;
+  background-color:gray ;
 
   
 }
@@ -349,6 +350,7 @@ background-color: rgb(78, 76, 76);
 #lesiones2 p {
 text-align: justify;
 padding: 1rem;
+background-color: gray;
 }
 #lesiones2 summary {
 display: flex;

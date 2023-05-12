@@ -4,14 +4,16 @@
 
 #main, h1
 {color: white;
-    margin-top: 1rem;
-    padding-top: 1rem;
+
+  
    
     
 }
 .main-contenedor-padre{
-display:inline-block;
- grid-template-columns: 1fr 1fr;
+ background-image: url(../img/monitoreo-cardiaco-gps.jpg);
+ background-size: cover;
+ background-position: center;
+
     
  }
 
@@ -19,8 +21,13 @@ display:inline-block;
  {color: black;
    margin: 0rem;
    padding: .5rem;
-   
+   text-align: center;
     background-color: black ;
+    font-size: 1rem;
+ }
+ #title h1
+ {
+  font-size: 2rem;
  }
 .main-contenedor-padre
  h1{
@@ -57,12 +64,26 @@ color: white;
     align-items: center;
     align-content: space-around ;
     justify-content: space-between;
-    background-image: url(../img/monitoreo-cardiaco-gps.jpg);
-    background-size: cover;
-    background-position: center;
+ 
     color: black;
     }
 
+#gps
+h1{
+  font-size: 1.5rem;
+}
+#gps
+h2{
+  font-size: 1.3rem;
+}
+#nuestros-equipos
+h1{
+  font-size: 1.5rem;
+}
+#nuestros-equipos
+h2{
+  font-size: 1.3rem;
+}
 
     .contenedor-hijo-gps1, image{
     border-radius: 1rem;
@@ -73,6 +94,7 @@ color: white;
      margin: 1rem;
      align-items: center;
      opacity: 1;
+     font-size: 1rem;
  }
     .contenedor-hijo-equipos, image{
     border-radius: 1rem;
@@ -89,7 +111,6 @@ color: white;
     .contenedor-hijo-gps1 {
     font-size: 1.5rem;
     text-align: center;
-    margin: 2rem;
     padding: .5rem;  
     display: grid;
     align-items: flex-start;
@@ -139,6 +160,15 @@ color: white;
       transform: translateX(0);
     }
   }
+  #variables-hijo-2
+  {
+    box-sizing: border-box;
+    background-color: rgb(136, 136, 136);
+    color: black;
+    font-style: bold;
+    text-align: center;
+    font-size: 1rem;  
+  }
 
 
 #nuestros-equipos
@@ -181,18 +211,43 @@ color: white;
      color: white; 
       
 }
-#nosotros,h1{
-    font-size: 16;
+
+#variables-hijo-2
+{
+  display: flex;
+background-color: rgb(136, 136, 136);
+font-size: 1rem;
+padding: auto;
+margin: auto;
+text-align: center;
+justify-content: center;
+}
+ #contacto
+  .contacto
+  .a{
+    
+   
+    height: auto;
+    width: auto;
+    margin: 2rem;
+    padding: 1.5rem;  
+    text-align: center; 
+    box-sizing: border-box;
+    background-color: rgb(136, 136, 136);
+   
+  }
+  #contacto,
+  .contacto h1
+  {
     margin: .5rem;
     padding: .5rem;  
-    text-align: center; 
-}
-#nosotros, h2{
-    font-size: 9;
-    margin: 1.5rem;
-    padding: .5rem;  
-    text-align: center; 
-}
+    text-align: center;
+    background-color: white; 
+   
+    
+  }m
+
+
 /* ////...contacto */
 #contacto {
     text-align: center;

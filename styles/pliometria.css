@@ -15,34 +15,35 @@
     text-align: justify;
     color: black;
     font-size: 13;
-    margin: auto;
+    margin: 1rem;
     background-color: black;
-    padding: 1.5rem;
+    padding: .5rem;
     }
     
- #title {
+ #title 
+ {
   color: white;
-  font-size: 1.5rem;
-  padding: 1rem;
+  font-size: 1rem;
+  padding: .5rem;
   text-align: center;
   font-style: uppercase;
     }
      
 .h2{
-   font-size: 4rem;
-   background-color: rgb(158, 157, 157) ;
    
-
+   background-color: rgb(158, 157, 157) ;
+  
 }
-h3, h1{
+#title,h3, h1{
   text-align: center;
-  margin: 1rem;
+  margin: .5rem;
   padding: .5rem;
   color: black;
   font-style: bold;
   background-color:rgb(158, 157, 157) ;
   border-radius: 30px 0 0 30px;
-  opacity: .8;
+  
+ 
 }
 
 #main
@@ -50,22 +51,17 @@ h3, h1{
     margin: .5 rem;
     padding: .5rem;
     box-sizing: border-box;
-    
     border-bottom: 5px solid black;
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
     text-align: center;
-    background-image: url(../img/pliometria.jpg);
     font-family: bold;
-    width: 60rem;
-    height: 60rem;
     color: black;
   }
   
   .contenedor-principal h3{
     text-transform: uppercase;
-    padding: 2rem;
+    padding: .5rem;
+    
     animation: myAnimation 1s;
     position: relative;
     animation: myAnimation 1s;
@@ -85,48 +81,33 @@ h3, h1{
 
    
   .contenedor-principal p{
+    color: black;
+    background-color: rgb(136, 136, 136);
     font-size: 1.5rem;
-    color: #fff;
+    font-weight: 400;
+    line-height: 1.5rem;
+    padding: .5rem;
+    margin: .5rem;
+    border-radius: 0 100px 0 30px;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
 
   }
   
-  .contenedor-principal a:visited{
-    color:#173058;   
-    border: none;
-    font-size: 0.8rem;
-    padding: .3rem .9rem;
-    margin: 0.4rem;
-    border-radius: 10px;
  
-  }
-  .contenedor-principal button {
-    border: none;
-    background-color: rgb(36, 36, 247);
-    font-size: 0.8rem;
-    padding: .3rem .9rem;
-    margin: 0.4rem;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    color: #fff;
-}
-
-  .contenedor-principal button:hover {
-  color: yellow;
-  font-size: 1rem;
-  padding: .4rem .9rem;
-  background-color: #fff;
-}
 
 
 .contenedor-padre {
   border-radius: 30px 0 0 30px;
-  background-color: rgb(158, 157, 157);
+  background-color: black;
   opacity: .8;
   animation: myAnimation 1s;
   position: relative;
   animation: myAnimation 1s;
   animation-fill-mode: forwards;
   animation-delay: .2s;
+  color: white;
 }
 
 @keyframes myAnimation {
@@ -137,49 +118,28 @@ h3, h1{
     top: 0;
   }
 }
-  #primera-fila,
-  #tercera-fila {
-   
-    margin: .5;
-    padding: .5rem;
-
-  }
+ 
+  
   .article-container{
     color: black;
   }
   
-  #segunda-fila, 
-  #cuarta-fila {
-
-    margin: .5;
-    padding: .5rem;
-  }
+  
 
   .primera-fila,
-  .tercera-fila {
-    background-color: var(--clr-main);
-    
-    
-  }
-  
-  .primera-fila:hover,
-  .tercera-fila:hover {
-    background-color: var(--clr-light);
-  }
-  
+  .tercera-fila 
   .segunda-fila,
   .cuarta-fila {
-    background-color: var(--clr-dark);
-    color: var(--clr-light);
-  
+    background-color: black;
+    color: white;
+    margin: .5;
+    padding: .5rem;
+    
   }
   
-  .segunda-fila:hover ,
-  .cuarta-fila:hover {
-    background-color: var(--clr-dark-light);
-  }
+    
+   
   
-
 
  img{
      width: 60%;
@@ -191,16 +151,28 @@ h3, h1{
      background-color: gray;
     
   }
-
-  #contacto h2{
-    background-color: var(--clr-main);
-    color: var(--clr-dark);
+  #contacto
+  .contacto
+  .a{
+    
+   
+    height: auto;
+    width: auto;
+    margin: 2rem;
+    padding: 1.5rem;  
+    text-align: center; 
+    box-sizing: border-box;
+    background-color: rgb(136, 136, 136);
+   
+  }
+  #contacto,
+  .contacto h1
+  {
+    margin: .5rem;
+    padding: .5rem;  
     text-align: center;
-    }
-
-  #contacto h2:hover 
-  { background-color: var(--clr-light);
-    color: var(--clr-dark)
-  
+    background-color: white; 
+   
+    
   }
     
