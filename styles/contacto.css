@@ -12,15 +12,14 @@ ul,li {
 }
 
 #contenedor {
-  display: flex;
-  flex-direction: column;
-  background-color: aqua;
-  padding: 2rem 0 8rem 0;
-  text-align: center;
-  font-style: bold;
   background-image: url(../img/fondo-contacto.jpg);
   background-size: cover;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0 8rem 0;
+  text-align: center;
+  font-style: bold;
 }
 
 #titulo {
