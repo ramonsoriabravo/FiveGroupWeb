@@ -289,6 +289,10 @@ ul,li {
   animation: bounce 1s ease infinite;
 }
 
+#easterEgg {
+  width: max-content;
+}
+
 #texto {
   display: flex;
   justify-content: center;
