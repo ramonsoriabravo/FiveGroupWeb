@@ -29,7 +29,7 @@ span {
     font-size: 1.5rem;
     text-align: center;
     padding: .5rem;
-    padding-bottom: 0;    
+    padding-bottom: 0;
 }
 
 #about-container h2 {
@@ -45,8 +45,8 @@ span {
     background-color: rgb(70, 69, 69);
     padding: 0.7rem;
     max-width: 95%;
-    margin-top: 3rem;
-    border-radius: 10px;   
+    /* margin-top: 1rem; */
+    border-radius: 10px;
 }
 
 img {
@@ -62,7 +62,7 @@ img {
     align-items: center;
     flex-wrap: wrap;
     background-color: white;
-    margin: 1rem 1.5rem 1.5rem;
+    margin: 1rem 1.5rem 5rem;
     background-image: url(../img/bg-sport-math.jpg);
     background-size: cover;
     border-radius: 1rem;
@@ -82,25 +82,28 @@ img {
 #about-container .about-info img {
     max-width: 90%;
     height: auto;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);   
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* ///////////////// INFORMACION DIRECTIVOS ///////////////////*/
 
-.about-managers{
-    margin: auto; 
-    text-align: center; 
+.about-managers {
+
+    margin: auto;
+    text-align: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-evenly;    
+    justify-content: space-evenly;
     align-content: center;
-    margin: 1rem 1.5rem;
+    /* margin: 0rem 2rem 3rem; */
+    margin: 0 1.5rem 2rem;
+    padding: 1rem 0 3rem;
     overflow: hidden;
 }
 
-.about-managers article{
+.about-managers article {
     text-align: center;
-    background-color: white;    
+    background-color: white;
     padding: 2rem;
     width: 80%;
     min-width: 180px;
@@ -110,18 +113,18 @@ img {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-.about-managers img{
+.about-managers img {
     width: 100%;
     height: auto;
     border-radius: 50%;
 }
 
-.about-managers .names{
-    font-size: 1.6rem; 
-    font-weight: 600;  
+.about-managers .names {
+    font-size: 1.6rem;
+    font-weight: 600;
 }
 
-.about-managers .position{
+.about-managers .position {
     font-family: 'Roboto Condensed', sans-serif;
     font-style: italic;
     font-size: 1.3rem;
@@ -129,102 +132,141 @@ img {
 
 /* ///////////////// INFORMACION COORDINADORES ///////////////////*/
 
-#coordinators{
-    margin: auto; 
-    text-align: center; 
+#coordinators {
+
+    margin: auto;
+    text-align: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-evenly;    
+    justify-content: space-evenly;
     align-content: center;
-    margin: 1rem 1.5rem;
+    /* margin: 1rem 1.5rem;      */
+    margin: 0 1.5rem 2rem;
+    padding: 1rem 0 0rem;
+    /* padding: 2rem 0 3rem; */
+    overflow: hidden;
 }
 
-#coordinators article{
+#coordinators article {
+
     text-align: center;
-    background-color: white;    
+    background-color: white;
     padding: 2rem;
     width: 20%;
     min-width: 210px;
     max-width: 400px;
-    border-radius: 1rem;
-    margin: .5rem;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-}
 
-#coordinators .coord-image{
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-}
-
-#coordinators .coord-names{
-    font-size: 1.5rem; 
-    font-weight: 600;     
-}
-
-#coordinators .coord-phone{
-    font-size: 1.2rem;   
-}
-
-#coordinators .coord-country{
-    font-family: 'Roboto Condensed', sans-serif;
-    font-style: italic;
-    font-size: 1.4rem; 
-}
-
-/* ///////////////// INFORMACION PERSONAL DE IT ///////////////////*/
-
-.it-staff{
-    margin: auto; 
-    text-align: center; 
-    background-image: url(../img/bg-html.webp);
-    background-size:cover;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-evenly;
-    padding-top: 2rem;
-    padding-bottom: 2rem;    
-    align-content: center;
-    margin: 0 1.5rem 5rem;
-    border-radius: 10px 10px 1rem 1rem;
-    overflow: hidden;
-}
-
-.it-staff article{
-    text-align: center;
-    background-color: rgb(46, 46, 46);    
-    padding: 2rem;
-    width: 20%;
-    min-width: 210px;
-    max-width: 400px;
     border-radius: 1rem;
     margin: .5rem;
     box-shadow: 0px 4px 10px rgba(26, 252, 5, 0.5);
     overflow: hidden;
 }
 
-.it-staff .it-image{
+#coordinators .coord-image {
     width: 100%;
     height: auto;
     border-radius: 50%;
 }
 
-.it-staff .it-names{
-    color: rgb(207, 206, 206);
-    font-style: italic;
-    font-size: 1.5rem; 
+#coordinators .coord-names {
+    font-size: 1.5rem;
     font-weight: 600;
-    padding-bottom: 0.7rem;  
 }
 
-.it-staff .it-job{
+#coordinators .coord-phone {
+    font-size: 1.2rem;
+}
+
+#coordinators .coord-country {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: italic;
+    font-size: 1.4rem;
+}
+
+/* ///////////////// INFORMACION PERSONAL DE IT ///////////////////*/
+
+.it-staff {
+    margin: auto;
+    text-align: center;
+    background-image: url(../img/bg-html.webp);
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    align-content: center;
+    margin: 0 1.5rem 5rem;
+    border-radius: 10px 10px 1rem 1rem;
+    overflow: hidden;
+}
+
+.it-staff article {
+    text-align: center;
+    background-color: rgb(46, 46, 46);
+    padding: 2rem;
+    width: 20%;
+    min-width: 210px;
+    max-width: 400px;
+
+    border-radius: 1rem;
+    margin: .5rem;
+    box-shadow: 0px 4px 10px rgba(26, 252, 5, 0.5);
+    overflow: hidden;
+}
+
+.it-staff .it-image {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.it-staff .it-names {
+    color: rgb(207, 206, 206);
+    font-style: italic;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: 0.7rem;
+}
+
+.it-staff .it-job {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     color: hsl(160, 98%, 44%);
     font-weight: 400;
-    font-size: 1.6rem;   
+    font-size: 1.2rem;
 }
 
+/*************** ANIMACION (MUESTRA/OCULTA) CONTENIDO ******************/
+
+#about-container .h2boton {
+    cursor: pointer;
+}
+
+#about-container .h2boton:hover {
+    background-color: rgb(42, 41, 41);
+    font-size: 1.7rem;
+    color: rgb(237, 232, 232);
+}
+
+#about-container .bloque .contenido {
+    max-height: 2000px;
+    transition: max-height 0.4s ease-in;
+    overflow: hidden;
+    /* visibility: visible; */
+}
+
+#about-container .bloque.oculto .contenido {
+    padding: 0;
+    height: 0;
+    visibility: hidden;
+
+    max-height: 0;
+    transition: max-height 0.25s ease-out;
+    overflow: hidden;
+}
+
+
+/***************ANIMACION (MUESTRA/OCULTA) FIN ******************/
 
 /* ///////////////// END ///////////////////*/
 
@@ -245,7 +287,7 @@ img {
     margin-top: 3rem;
     margin-bottom: 3rem;
     min-width: 180px;
-    
+
     text-align: center;
     padding: 1rem;
     max-width: 400px;
@@ -260,10 +302,7 @@ img {
 #invit-container {
     display: grid;
     gap: 1rem;
-    grid-template: "texto  texto" auto 
-                    "imagen imagen" 1fr 
-                    "boton  boton" auto 
-                    / 1fr 1fr;
+    grid-template: "texto  texto" auto "imagen imagen" 1fr "boton  boton" auto / 1fr 1fr;
 
     justify-items: center;
 }
@@ -284,7 +323,7 @@ img {
 #invit-container .invit-image {
     margin: auto;
     width: 100%;
-    max-width: 70%;    
+    max-width: 70%;
 }
 
 
@@ -332,15 +371,15 @@ img {
 
     /* ///////////////// INFORMACION PRINCIPAL ///////////////////*/
 
-   
+
 
     /* ///////////////// INFORMACION DIRECTIVOS ///////////////////*/
 
-    .about-managers .names{
-        font-size: 1.8rem; 
+    .about-managers .names {
+        font-size: 1.8rem;
     }
-    
-    .about-managers .position{
+
+    .about-managers .position {
         font-size: 1.5rem;
     }
 
