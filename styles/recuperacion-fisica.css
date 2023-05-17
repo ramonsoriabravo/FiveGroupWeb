@@ -88,6 +88,7 @@ h2 {
 
 /**********************************/
 
+
 .utilidades {
     background-color: gainsboro;
     margin: auto;
@@ -115,13 +116,15 @@ h2 {
 
 .utilidades .utilidades-imagen img {
     width: 235px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .utilidades .utilidades-texto {
     background-color: #a5adb4;
     margin: 1rem;
     padding: 1.5rem;
-    width: 200px;
+    width: 300px;
     border-radius: 1rem;
 }
 
@@ -155,5 +158,12 @@ h2 {
 
     section[id] {
         scroll-margin-top: 85px;
+    }
+}
+
+@media screen and (min-width: 803px){
+    .utilidades-texto {
+        font-size: 1.2rem;
+
     }
 }

@@ -69,6 +69,23 @@ function validarForm(event) {
     document.getElementById("formularioValidado").submit();
   }
   
+//EASTER EGG
 
+console.log("EASTER EGG: Ejecuta la funcion easterEgg()...");
+
+function easterEgg() {
+  console.log('Haga click en "Direccion: Calle Falsa 123, Caba"');
+}
+
+function sorpresa() {
+  document.getElementById("easterEgg");
+  var circle = document.createElement("div");
+  var texto = document.createElement("p");
+  texto.id = "texto";
+  circle.id = "myCircle";
+  texto.innerHTML = "¡Te queremos profe!";
+  document.body.appendChild(circle);
+  circle.appendChild(texto);
+}
 
 

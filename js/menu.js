@@ -18,5 +18,5 @@ console.log(menuLinks);
 menuLinks.forEach(menuLink => {
   menuLink.addEventListener("click", function () {
     navMenu.classList.remove("nav-menu_visible");
-  })
-})
+  });
+});
