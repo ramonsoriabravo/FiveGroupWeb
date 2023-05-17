@@ -162,6 +162,7 @@ background-color: rgb(78, 76, 76);
 #lesiones p {
 text-align: justify;
 padding: 1rem;
+font-size: 1rem;
 }
 #lesiones2 {
   border-radius: 0 100px 0 30px;
@@ -351,6 +352,7 @@ background-color: rgb(78, 76, 76);
 text-align: justify;
 padding: 1rem;
 background-color: gray;
+font-size: 1rem;
 }
 #lesiones2 summary {
 display: flex;
