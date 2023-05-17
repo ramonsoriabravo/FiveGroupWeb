@@ -2,281 +2,293 @@
 @import url(footer.css);
 
 
-#main, h1
-{color: white;
-
-  
-   
-    
-}
-.main-contenedor-padre{
- background-image: url(../img/monitoreo-cardiaco-gps.jpg);
- background-size: cover;
- background-position: center;
-
-    
- }
-
- #title
- {color: black;
-   margin: 0rem;
-   padding: .5rem;
-   text-align: center;
-    background-color: black ;
-    font-size: 1rem;
- }
- #title h1
- {
-  font-size: 2rem;
- }
-.main-contenedor-padre
- h1{
-background-color: black;
-font-size: 1rem;
-text-align: center;
-color: white;
- }
- 
- h2{
-    color: black;
-    margin: 2rem;
-    padding: 2rem;
-    background-color: rgb(159, 193, 204);
-    font-size: 1.5rem;
-    text-align: center;
-}
-
- img{
-
-     width: auto;
-     min-width: 5.5rem;
-     max-width: 25rem;
-     border-radius: 1rem;
-     margin: 1rem;
-     background-color: aliceblue;
-     align-items: center;
-     padding: 1rem;
-     
- }
-     
-.main-contenedor-padre{
-    
-    align-items: center;
-    align-content: space-around ;
-    justify-content: space-between;
- 
-    color: black;
-    }
-
-#gps
-h1{
-  font-size: 1.5rem;
-}
-#gps
-h2{
-  font-size: 1.3rem;
-}
-#nuestros-equipos
-h1{
-  font-size: 1.5rem;
-}
-#nuestros-equipos
-h2{
-  font-size: 1.3rem;
-}
-
-    .contenedor-hijo-gps1, image{
-    border-radius: 1rem;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    width: auto;
-     min-width: 9rem;
-     max-width: 40rem;
-     margin: 1rem;
-     align-items: center;
-     opacity: 1;
-     font-size: 1rem;
- }
-    .contenedor-hijo-equipos, image{
-    border-radius: 1rem;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    width: auto;
-     min-width: 9rem;
-     max-width: 40rem;
-     margin: 1rem;
-     align-items: center;
-     
-     }
-    
-
-    .contenedor-hijo-gps1 {
-    font-size: 1.5rem;
-    text-align: center;
-    padding: .5rem;  
-    display: grid;
-    align-items: flex-start;
-    animation: entrada 1s;
-
-}
-
-@keyframes entrada {
-    from {
-      opacity: 0;
-      transform: translateX(-50%);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-
-.contenedor-hijo-gps1,p{
-    font-size: 8;
-    color: black;
-}
-.contenedor-hijo2-variables,ul{
-    font-size: 8;
-    color: black;
+h2 {
+  color: white;
 }
 
 
-    .contenedor-hijo-equipos {
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 2rem;
-    padding: .5rem;  
-    display: grid;
-    align-items: flex-start;
-    animation: entrada 1s;
-
-}
-
-@keyframes entrada {
-    from {
-      opacity: 0;
-      transform: translateX(-50%);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  #variables-hijo-2
-  {
-    box-sizing: border-box;
-    background-color: rgb(136, 136, 136);
-    color: black;
-    font-style: bold;
-    text-align: center;
-    font-size: 1rem;  
-  }
-
-
-#nuestros-equipos
-    .contenedor-hijo-equipos {
-    display: flex;
-    align-items:center;
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 2rem;
-    padding: .5rem;  
-  
-}
-
-.contenedor-hijo2-variables{
-    box-sizing: border-box;
-    align-items: center;
-
-}
-  
-
-#gps
-.contenedor-padre2-variables
-{
-    text-align: center;
-    height: auto;
-    width: auto;
-    margin: 2rem;
-    padding: 1.5rem;     
-    background-color: black;
-    color: white; 
-}
-.contenedor-hijo2-variables
-{ 
-    text-align: center;
-    height: auto;
-    width: auto;
-     margin: 2rem;
-     padding: 1.5rem;  
-     text-align: center;
-     color: white; 
-      
-}
-
-#variables-hijo-2
-{
+.main-contenedor-padre {
+  margin: auto;
+  text-align: center;
   display: flex;
-background-color: rgb(136, 136, 136);
-font-size: 1rem;
-padding: auto;
-margin: auto;
-text-align: center;
-justify-content: center;
+  flex-direction: column;
+  background-image: url(../img/monitoreo-cardiaco-gps.jpg);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
 }
- #contacto
-  .contacto
-  .a{
-    
-   
-    height: auto;
-    width: auto;
-    margin: 2rem;
-    padding: 1.5rem;  
-    text-align: center; 
-    box-sizing: border-box;
-    background-color: rgb(136, 136, 136);
-   
-  }
-  #contacto,
-  .contacto h1
-  {
-    margin: .5rem;
-    padding: .5rem;  
-    text-align: center;
-    background-color: white; 
-   
-    
-  }m
 
+#title {
+  margin: 0rem;
+  padding: .5rem;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+
+#title h1 {
+  font-size: 2rem;
+}
+
+.main-contenedor-padre h2 {
+  background-color: black;
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+}
+
+.notas {
+  color: black;
+  margin: 2rem;
+  padding: 2rem;
+  background-color: rgb(159, 193, 204);
+  font-size: 1.5rem;
+  text-align: center;
+  max-width: 800px;
+}
+
+img {
+  width: auto;
+  max-width: 90%;
+  border-radius: 1rem;
+  margin: 1rem;
+  background-color: aliceblue;
+  align-items: center;
+  padding: 1rem;
+}
+
+.main-contenedor-padre {
+  align-items: center;
+  align-content: space-around;
+  justify-content: space-between;
+  color: black;
+}
+
+#gps h2 {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+#nuestros-equipos h2{
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+#gps .notas {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+
+
+#nuestros-equipos .notas {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.titulo-detalle{
+  margin-left: 3rem;
+  
+  background-color: rgb(67, 67, 253);
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  max-width: 70%;
+}
+
+.titulo-detalle:hover{
+  background-color: blue;
+  color: aqua;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.texto-detalle{
+  margin: auto;
+  text-align: center;
+  padding: 1.5rem 0.5rem 2rem;
+  font-size: 1.2rem;
+}
+
+#texto-final{
+
+  text-align: center;
+  padding: 1.5rem 1.5rem 2rem;
+  font-size: 1.2rem;
+}
+
+.contenedor-hijo-gps1 {
+  border-radius: 1rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  width: auto;
+  min-width: 9rem;
+  max-width: 40rem;
+  margin: 1rem;
+  align-items: center;
+  opacity: 1;
+  font-size: 1rem;
+}
+
+.contenedor-hijo-equipos{
+  border-radius: 1rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  width: auto;
+  min-width: 9rem;
+  max-width: 40rem;
+  margin: 1rem;
+  align-items: center;
+}
+
+.contenedor-hijo-gps1 {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+  display: grid;
+  align-items: flex-start;
+  animation: entrada 1s;
+}
+
+#contenedor-hijo2-variables{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+
+
+@keyframes entrada {
+  from {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.contenedor-hijo-gps1,
+p {
+  font-size: 8;
+  color: black;
+}
+
+.contenedor-hijo-equipos {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 2rem;
+  padding: .5rem;
+  display: grid;
+  align-items: flex-start;
+  animation: entrada 1s;
+}
+
+@keyframes entrada {
+  from {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+#variables-hijo-2 {
+  box-sizing: border-box;
+  background-color: rgb(136, 136, 136);
+  color: black;
+  font-style: bold;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.contenedor-hijo2-variables {
+  box-sizing: border-box;
+  align-items: center;
+}
+
+
+#gps .contenedor-padre2-variables {
+  text-align: center;
+  height: auto;
+  width: auto;
+  margin: 2rem;
+  padding: 1.5rem;
+  background-color: black;
+  color: white;
+}
+
+.contenedor-hijo2-variables {
+  text-align: center;
+  height: auto;
+  width: auto;
+  margin: 2rem;
+  padding: 1.5rem;
+  text-align: center;
+  color: white;
+}
+
+#variables-hijo-2 {
+  display: flex;
+  background-color: rgb(136, 136, 136);
+  font-size: 1rem;
+  padding: auto;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+}
 
 /* ////...contacto */
-#contacto {
-    text-align: center;
-  }
-  
-  #contacto {
-    text-transform: uppercase;
-  }
-  
-  #contacto:hover {
-    background-color: #000;
-    color: white;
-  }
+
+
+#contacto a {
+  margin: .5rem;
+  padding: .5rem 5rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: white;
+  color: black;
+  text-transform: uppercase;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
+} 
+
+#contacto a:visited {
+  color: black;
+}
+
+#contacto a:link {
+  color: white;
+}
+
+#contacto a:hover {
+  color: white;  
+  background-color: blue;
+  font-size: 1rem;
+}
+
 /* MEDIA QUERY */
 
-@media screen and (min-width:700px) and (max-width:900px)
-{
+@media screen and (min-width:700px) and (max-width:900px) {
   #title {
     margin: auto;
     padding: 4rem 2rem;
- } }
-    
- 
+  }
+}
+
 
 @media screen and (max-width: 700px) {
- 
+
   #title {
     margin: auto;
     padding: 3rem 1rem;
     font-size: 1.5rem;
-  }}
- 
+  }
+}
