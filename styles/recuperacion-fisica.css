@@ -106,11 +106,13 @@ h2 {
     text-align: center;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: stretch;
+    align-content: stretch;
     flex-wrap: wrap;
 }
 
 .utilidades .utilidades-imagen {
+    display: flex;
     align-items: center;
     max-width: 90%;
 }
@@ -122,6 +124,8 @@ h2 {
 }
 
 .utilidades .utilidades-texto {
+    display: flex;
+    align-items: center;
     background-color: #a5adb4;
     margin: 1rem;
     padding: 1.5rem;
@@ -151,7 +155,7 @@ h2 {
 
 @media screen and (min-width: 500px) {
     .utilidades .utilidades-imagen img {
-        width: 400px;
+        width: 320px;
     }
 }
 
@@ -159,12 +163,5 @@ h2 {
 
     section[id] {
         scroll-margin-top: 85px;
-    }
-}
-
-@media screen and (min-width: 803px){
-    .utilidades-texto {
-        font-size: 1.2rem;
-
     }
 }
