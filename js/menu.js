@@ -20,3 +20,28 @@ menuLinks.forEach(menuLink => {
     navMenu.classList.remove("nav-menu_visible");
   });
 });
+
+//************************************************************ */
+//Muestra el mensaje "Próximamente Redes Sociales" 
+// con click en botones de redes sociales del footer
+
+const linkSociales = document.querySelectorAll(".fa-brands");
+const mensaje = document.querySelector(".footer-msg");
+
+// console.log("link sociales:", linkSociales);
+// console.log("Mensaje:", mensaje);
+
+// Le agrega un click a cada link social
+// cuando hagan click agrega la clase visible por determinado tiempo
+// Y muestre el mensaje de Próximamente Redes Sociales
+linkSociales.forEach(link => {
+  link.addEventListener("click", function () {
+    mensaje.classList.add("visible");
+    setTimeout(function() {
+      mensaje.classList.remove("visible");
+    }, 2800);
+  });
+});
+
+
+

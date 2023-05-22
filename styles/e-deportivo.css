@@ -12,6 +12,10 @@ body {
     background-color: rgb(128, 127, 127);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 span {
     background-color: blue;
     font-style: italic;

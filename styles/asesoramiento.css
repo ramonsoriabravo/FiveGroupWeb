@@ -9,6 +9,10 @@
     --clr-white: #fff;
   }
 
+  html{
+    scroll-behavior: smooth;
+  }
+
 /*main{
    text-align: center;
 }

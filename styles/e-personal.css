@@ -28,6 +28,10 @@
     font-family:'Roboto', sans-serif;
   }
 
+  html{
+    scroll-behavior: smooth;
+}
+
   a, ul {
     text-decoration: none;
     list-style: none;

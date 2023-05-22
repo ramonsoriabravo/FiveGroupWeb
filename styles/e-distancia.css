@@ -12,6 +12,10 @@
 main{
     text-align: center;
  }
+
+ html{
+  scroll-behavior: smooth;
+}
  
 /*  SECCION PRINCIPAL */
 

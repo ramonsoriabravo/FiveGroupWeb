@@ -6,6 +6,9 @@ h2 {
   color: white;
 }
 
+html{
+  scroll-behavior: smooth;
+}
 
 .main-contenedor-padre {
   margin: auto;
