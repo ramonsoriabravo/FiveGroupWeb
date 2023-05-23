@@ -26,6 +26,8 @@ body {
     background-color: #a5adb4;
 }
 
+/*//////////// PANTALLA MUY PEQUEÑA (Hasta 400px)////////////////*/
+
 main {
     margin: auto;
     max-width: 60rem;
@@ -43,7 +45,7 @@ section[id] {
 .home-info-container {
     display: flex;
     flex-wrap: wrap;
-    padding: 2rem;
+    padding: 1.2rem;
     margin: 1rem 0;
     background-color: gainsboro;
 
@@ -55,8 +57,9 @@ section[id] {
 .home-info-text h2 {
     font-weight: 700;
     font-style: italic;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
+    padding-right: 1rem;
 }
 
 .home-info-text p {
@@ -73,7 +76,7 @@ section[id] {
 /*------ SERVICIOS ---------*/
 
 #services-container {
-    padding: 2rem;
+    padding: 1.2rem;
     padding-bottom: 8rem;
     background-color: grey;
     border-radius: 35px 0 0 0;
@@ -81,13 +84,13 @@ section[id] {
 
 #services-container h2 {
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 28px;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
 #services-container summary {
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 400;
     padding: 0.4rem;
     cursor: pointer;
@@ -99,11 +102,10 @@ section[id] {
 }
 
 .detail-text {
-    padding: 2rem;
+    padding: 1rem;
     background-color: rgb(158, 157, 157);
     border-radius: 10px;
     border-radius: 0;
-
     text-align: center;
 }
 
@@ -148,7 +150,36 @@ article img {
     margin-bottom: 1rem;
 }
 
-/*//////////// PANTALLA MEDIANA /////////////////*/
+/*//////////// PANTALLA CHICA (de 400px a 700px) ////////////////*/
+
+@media screen and (min-width: 400px){
+    .home-info-container {
+        padding: 2rem;
+    }
+
+    .home-info-text h2 {
+        font-size: 1.5rem;
+    }
+
+    #services-container {
+        padding: 2rem;
+    }
+
+    #services-container h2 {
+        font-size: 1.8rem;
+    }
+
+    #services-container summary {
+        font-size: 1.3rem;
+    }
+
+    .detail-text {
+        padding: 2rem;
+    }
+}
+
+
+/*//////////// PANTALLA MEDIANA (de 700px a 900px)/////////////////*/
 
 @media screen and (min-width: 700px) {
 
@@ -158,22 +189,18 @@ article img {
     }
 
     .home-info-text h2 {
-        font-size: 30px;
+        font-size: 1.8rem;
     }
 
     .article-container {
         display: flex;
-        /* background-color: rgb(107, 107, 109); */
         border-radius: 25px;
         align-items: center;
         padding-right: 10px;
         padding-left: 10px;
         margin-bottom: 20px;
-
-        /* probando imagen fondo*/
         background-image: url(../img/bg-sport-math.jpg);
         background-size:cover;
-        /* background-repeat: no-repeat; */
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
     }
 
@@ -193,4 +220,31 @@ article img {
     }
 }
 
-/*//////////// PANTALLA GRANDE LO HAGO DESDE ACA A 900PX /////////////////*/
+/*//////////// PANTALLA GRANDE (a partir de 900px) /////////////////*/
+
+@media screen and (min-width: 900px){
+
+    main {
+        max-width: 70rem;
+    }
+
+    .home-info-container {
+        padding: 3rem;
+    }
+
+    .home-info-text h2 {
+        font-size: 2rem;
+    }
+
+    #services-container {
+        padding: 2rem;
+    }
+
+    #services-container h2 {
+        font-size: 2rem;
+    }
+
+    #services-container summary {
+        font-size: 1.5rem;
+    }
+}
